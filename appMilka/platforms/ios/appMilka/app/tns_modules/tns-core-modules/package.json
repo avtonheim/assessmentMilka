@@ -1,0 +1,125 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "tns-core-modules@~4.1.0",
+        "scope": null,
+        "escapedName": "tns-core-modules",
+        "name": "tns-core-modules",
+        "rawSpec": "~4.1.0",
+        "spec": ">=4.1.0 <4.2.0",
+        "type": "range"
+      },
+      "/Users/aleksandernygardtonheim/assessmentMilka/app/node_modules/tns-template-hello-world"
+    ]
+  ],
+  "_from": "tns-core-modules@>=4.1.0 <4.2.0",
+  "_id": "tns-core-modules@4.1.0",
+  "_inCache": true,
+  "_location": "/tns-core-modules",
+  "_nodeVersion": "8.11.1",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/tns-core-modules_4.1.0_1527760683028_0.12866632574300163"
+  },
+  "_npmUser": {
+    "name": "tns-bot",
+    "email": "nativescript@telerik.com"
+  },
+  "_npmVersion": "5.6.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "tns-core-modules@~4.1.0",
+    "scope": null,
+    "escapedName": "tns-core-modules",
+    "name": "tns-core-modules",
+    "rawSpec": "~4.1.0",
+    "spec": ">=4.1.0 <4.2.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/tns-template-hello-world"
+  ],
+  "_resolved": "https://registry.npmjs.org/tns-core-modules/-/tns-core-modules-4.1.0.tgz",
+  "_shasum": "f838f0e040b9cdef8d361ba7392dfece51762fc2",
+  "_shrinkwrap": null,
+  "_spec": "tns-core-modules@~4.1.0",
+  "_where": "/Users/aleksandernygardtonheim/assessmentMilka/app/node_modules/tns-template-hello-world",
+  "dependencies": {
+    "tns-core-modules-widgets": "4.1.0"
+  },
+  "description": "Telerik NativeScript Core Modules",
+  "devDependencies": {
+    "@types/node": "~7.0.5",
+    "tns-platform-declarations": "*"
+  },
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-ZTpH7/zHfARrJ+1bPwbBYyqFVQO+2unnygfLW8Bu3clzpTkdwwW++1DS+Qbzw7r84+dzdVPZ7zwEVkjpfAFogw==",
+    "shasum": "f838f0e040b9cdef8d361ba7392dfece51762fc2",
+    "tarball": "https://registry.npmjs.org/tns-core-modules/-/tns-core-modules-4.1.0.tgz",
+    "fileCount": 418,
+    "unpackedSize": 2237967,
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbD8crCRA9TVsSAnZWagAAXaIQAJG+/DXvu4xMU/z9zlXW\nijVKjK+O3TVpM1j1IL7yTX+IkwEJcNv5+5E3+LBlUEn+uiVcpQC+DQ+5MXXk\ntqXtR37y0siciMmq9PYemCoJ9XYhThszZtR65clpgjKvejnqcOm+QMyO2cLr\naFpWUcwxnE2igl4yFcOnAnLtk8MLddoe8VKR3gIZpqQ7bgQt6iZ5LsTGJn5B\nFE2tRxAMP5kvcgeEoOXDxe77TN2LDnqIhUM31sYZrQcnB/Lxc2Phl2odyM3i\nkaN686tnRzXmeMRcalDZtjAYAk/vIACm/Jd6GAQMHoFxjnDYloqfxT+brarh\nu6F8Zg/gvCTSuqXrAM/3eCtWqJpKarvi5FgbfEupuSYKwKuWS+rd3ne8Yf1a\n8m50D6hABMwTjPs3hNGH8rEfnORSQeg8St1v6OMhKHijn3RakUBJSEvRFc0T\nRS+ToLGUZAC2ndV7X9WHcrRNZGsz3uhi/y2CttGDQ1/a+MU74pbw4wLfZAAp\ncgncKyRa5fWmKsToQ0dgo84nHhAY2hicf1P5PAjsFY8lPhIAaFMcZL+T/0wX\n+Xyes13nQp3DJsP2Sfz4lEdfjur5Tr0Rd8VOFIhAmAJ5E/wbBdRO8NQmJ9HQ\nDqdl/QOEfoqqXxFWHiZ3KiYHyypqdWJNyd5Sx11kefIaPkYv24OZaI5tcxMv\n2VsE\r\n=6NkD\r\n-----END PGP SIGNATURE-----\r\n"
+  },
+  "files": [
+    "**/*.d.ts",
+    "**/*.js",
+    "**/package.json",
+    "!android17.d.ts",
+    "!ios.d.ts",
+    "!bin/",
+    "!apps/",
+    "!build/",
+    "!node-tests/",
+    "!declarations.android.d.ts",
+    "!declarations.ios.d.ts",
+    "!gruntfile.js",
+    "!org.nativescript.widgets.d.ts"
+  ],
+  "homepage": "https://www.nativescript.org",
+  "license": "Apache-2.0",
+  "maintainers": [
+    {
+      "name": "hhristov",
+      "email": "hristo.hristov@outlook.com"
+    },
+    {
+      "name": "panayot.cankov",
+      "email": "panayot.cankov@telerik.com"
+    },
+    {
+      "name": "tns-bot",
+      "email": "nativescript@telerik.com"
+    },
+    {
+      "name": "vakrilov",
+      "email": "alexander.vakrilov@gmail.com"
+    }
+  ],
+  "name": "tns-core-modules",
+  "nativescript": {
+    "platforms": {
+      "ios": "4.0.0",
+      "android": "4.0.0"
+    }
+  },
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NativeScript/NativeScript/commit/86f9d3870688f1e7a759fa72061ea07d5d488e09"
+  },
+  "snapshot": {
+    "android": {
+      "tns-java-classes": {
+        "modules": [
+          "ui/frame/activity",
+          "ui/frame/fragment"
+        ]
+      }
+    }
+  },
+  "typings": "tns-core-modules.d.ts",
+  "version": "4.1.0"
+}

@@ -1,0 +1,107 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "tns-core-modules-widgets@4.1.0",
+        "scope": null,
+        "escapedName": "tns-core-modules-widgets",
+        "name": "tns-core-modules-widgets",
+        "rawSpec": "4.1.0",
+        "spec": "4.1.0",
+        "type": "version"
+      },
+      "/Users/aleksandernygardtonheim/assessmentMilka/app/node_modules/tns-core-modules"
+    ]
+  ],
+  "_from": "tns-core-modules-widgets@4.1.0",
+  "_id": "tns-core-modules-widgets@4.1.0",
+  "_inCache": true,
+  "_location": "/tns-core-modules-widgets",
+  "_nodeVersion": "8.11.1",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/tns-core-modules-widgets_4.1.0_1527245445475_0.44398647023339377"
+  },
+  "_npmUser": {
+    "name": "tns-bot",
+    "email": "nativescript@telerik.com"
+  },
+  "_npmVersion": "5.6.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "tns-core-modules-widgets@4.1.0",
+    "scope": null,
+    "escapedName": "tns-core-modules-widgets",
+    "name": "tns-core-modules-widgets",
+    "rawSpec": "4.1.0",
+    "spec": "4.1.0",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "/tns-core-modules"
+  ],
+  "_resolved": "https://registry.npmjs.org/tns-core-modules-widgets/-/tns-core-modules-widgets-4.1.0.tgz",
+  "_shasum": "bfb706fb5f246d2f44e7c652dbe4564fdf9c0261",
+  "_shrinkwrap": null,
+  "_spec": "tns-core-modules-widgets@4.1.0",
+  "_where": "/Users/aleksandernygardtonheim/assessmentMilka/app/node_modules/tns-core-modules",
+  "author": {
+    "name": "NativeScript team"
+  },
+  "bugs": {
+    "url": "https://github.com/NativeScript/android-widgets/issues"
+  },
+  "dependencies": {},
+  "description": "Native widgets used in the NativeScript framework.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-Wft3NCJ/++tAMd6nXqtiihX5gIvK0mAch7ft08cscg//NOkSi1OwZ2rhG8JmLSKeSwjtSPT0mw2/hts/bzuguw==",
+    "shasum": "bfb706fb5f246d2f44e7c652dbe4564fdf9c0261",
+    "tarball": "https://registry.npmjs.org/tns-core-modules-widgets/-/tns-core-modules-widgets-4.1.0.tgz",
+    "fileCount": 11,
+    "unpackedSize": 436649,
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbB+qFCRA9TVsSAnZWagAAW+AP/28vHjXTPFrNVY9A/IYQ\nuAvUTBKkawe7f+cqm6Hf5TQmhUktcVHjOIl2bm4tqBBHh+c2aNNMZgxcox48\nrQOaa0f0mrCXAJ9V7Xk5OG587wGBuz53yeNdX55WmtFkYJTXEKujcbCNNzVC\nU7Acn0dV5uwjivzZHTIF+ud6aYCt+nX6E5cq5guGk6x/oArOZvDTSenuogQZ\nglGCbGKGstjnvU+pNHN+8EqZBZBssErTC7xPHNbqa9CH3xKkDW3S2JQzkkUB\ndsMm0nE9smQs8xbIaosJ0Z/CGdROyG0BJxpxcQb7oSIOvTpV07ULKkQ9E/it\nEUrzahdv4Si6ZQTjq+t2A4PDgEaBK4prnuH6pmjJAoqZYCvVb6aq+C2GydTo\nolRDyg0ZnXh+6XH6uDB/mdASAx/eYdpmtYgo9MsEgBagz9Tbl6fsgCmKq6nZ\nnz4+N70hMMvsGYI1OK7JY/yvPGab3z21BmmFG8nCQlkuCRsLLW/iApybRhzq\nxG96AFjQGb3JtHy5vY2LAtUJKh80VkB0aiNCFspBAjywNj5V1KG5t55Mr3GL\noNw9ckKu6fbSyZjfeGaOKc5kfhpEfvSS9+VT1EVA+PBnnDVTRov40jfkHRuu\nRxYVvhTE0w9BK82Rb+u1kXLAFARVJgL51gjzwqKRNcTBWTCnSvAjk8GiBwAM\nxaEY\r\n=6eqb\r\n-----END PGP SIGNATURE-----\r\n"
+  },
+  "homepage": "https://github.com/NativeScript/android-widgets#readme",
+  "license": "Apache-2.0",
+  "maintainers": [
+    {
+      "name": "hhristov",
+      "email": "hristo.hristov@outlook.com"
+    },
+    {
+      "name": "panayot.cankov",
+      "email": "panayot.cankov@telerik.com"
+    },
+    {
+      "name": "tns-bot",
+      "email": "nativescript@telerik.com"
+    },
+    {
+      "name": "vakrilov",
+      "email": "alexander.vakrilov@gmail.com"
+    },
+    {
+      "name": "vchimev",
+      "email": "Vasil.Chimev@telerik.com"
+    }
+  ],
+  "name": "tns-core-modules-widgets",
+  "nativescript": {
+    "platforms": {
+      "ios": "4.0.0",
+      "android": "4.0.0"
+    }
+  },
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NativeScript/android-widgets.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "4.1.0"
+}
