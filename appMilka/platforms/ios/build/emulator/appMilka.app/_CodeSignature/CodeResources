@@ -88,6 +88,18 @@
 		<data>
 		mLZna6Hkt4fD4s7mNTF1gJqdGCQ=
 		</data>
+		<key>Frameworks/sqlitewrapper.framework/Info.plist</key>
+		<data>
+		px7kxzQdYgV3E8jeLJR69+3mQU0=
+		</data>
+		<key>Frameworks/sqlitewrapper.framework/_CodeSignature/CodeResources</key>
+		<data>
+		iHyRP00uc/1ghJr3CMmlzORI7aQ=
+		</data>
+		<key>Frameworks/sqlitewrapper.framework/sqlitewrapper</key>
+		<data>
+		8tMZxiTF1BF98tNGJ99DZAbu9N4=
+		</data>
 		<key>Info.plist</key>
 		<data>
 		Vw3NbhmE2cfJtCjwSAkJHS1xynY=
@@ -186,7 +198,7 @@
 		</data>
 		<key>app/app.css</key>
 		<data>
-		azXPf8ZpdkvWEe+f4xZEVyRs+u0=
+		DP9kht/aevAuXs9OLkOvpiprCO8=
 		</data>
 		<key>app/app.js</key>
 		<data>
@@ -198,15 +210,15 @@
 		</data>
 		<key>app/main-page.js</key>
 		<data>
-		49/T/HWk1B08Pqabv8LlIVmRnhk=
+		GOZ1lP+bCcc1GpfiVyGL6HWulkI=
 		</data>
 		<key>app/main-page.xml</key>
 		<data>
-		2tt5QUc3voQpQIga1hqL7SAIAHc=
+		NK0ruOSRA1ck9rm8Qn1TPPKnxmM=
 		</data>
 		<key>app/main-view-model.js</key>
 		<data>
-		+XelK0+zH+mEQVYj91l+kUwkdQ0=
+		rcg7GeeTSRscbqD9i0bNnzLlkvw=
 		</data>
 		<key>app/package.json</key>
 		<data>
@@ -215,6 +227,30 @@
 		<key>app/references.d.ts</key>
 		<data>
 		yDozBNmMJYY1mHH12KwQyKqK+Eg=
+		</data>
+		<key>app/tns_modules/nativescript-sqlite/.npmignore</key>
+		<data>
+		d86FUH6hNfCLnGwWX71i21wpY2M=
+		</data>
+		<key>app/tns_modules/nativescript-sqlite/LICENSE</key>
+		<data>
+		mmtZ7Pc/8uREL0e3Q0ZsUqZoRJg=
+		</data>
+		<key>app/tns_modules/nativescript-sqlite/README.md</key>
+		<data>
+		8v78bHnc0YJs3CwgccM8I6WlW9o=
+		</data>
+		<key>app/tns_modules/nativescript-sqlite/changelog</key>
+		<data>
+		EZaLGkwuX/hLxEaT6AHg7SFUgkk=
+		</data>
+		<key>app/tns_modules/nativescript-sqlite/package.json</key>
+		<data>
+		rqa+8jguPE1nkkCpvO4xMj/a4CA=
+		</data>
+		<key>app/tns_modules/nativescript-sqlite/sqlite.js</key>
+		<data>
+		LPv1sgoRwKKPInaPHBWq1xDsCPY=
 		</data>
 		<key>app/tns_modules/nativescript-theme-core/css/aqua.css</key>
 		<data>
@@ -1636,6 +1672,26 @@
 		<data>
 		wZxmlWBzxXxcU/NORbfb5LDFxuM=
 		</data>
+		<key>app/views/questions/questions-view-model.js</key>
+		<data>
+		kiuN/RuE/3MhjYoaL1gjwr4ZSYo=
+		</data>
+		<key>app/views/questions/questions.js</key>
+		<data>
+		5udYoJ0BQr/Wbhp1aVlXhR7s24g=
+		</data>
+		<key>app/views/questions/questions.xml</key>
+		<data>
+		WQBJtRdYJmidu0gjHa65mYROtzQ=
+		</data>
+		<key>app/views/summary/summary.js</key>
+		<data>
+		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+		</data>
+		<key>app/views/summary/summary.xml</key>
+		<data>
+		0aHQqpUTmZEH+o1aGb4Bn1Yi9Pk=
+		</data>
 		<key>build.xcconfig</key>
 		<data>
 		RNL/GAS4TOxSHBwCBUOpAd1PTlk=
@@ -1881,6 +1937,39 @@
 			<key>hash2</key>
 			<data>
 			H9XwUAmnWq5+eH6GEHZCdhGLTesVCKbGHYo+AprW3vM=
+			</data>
+		</dict>
+		<key>Frameworks/sqlitewrapper.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			px7kxzQdYgV3E8jeLJR69+3mQU0=
+			</data>
+			<key>hash2</key>
+			<data>
+			FHS9WFzv6f8OSLAobnJcgACMs+S8qZcM32uzXQrW7Zo=
+			</data>
+		</dict>
+		<key>Frameworks/sqlitewrapper.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iHyRP00uc/1ghJr3CMmlzORI7aQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			c5sEwq4iEhnMdincUqoNoxTo2mAuHFb/zMH3tuIONE8=
+			</data>
+		</dict>
+		<key>Frameworks/sqlitewrapper.framework/sqlitewrapper</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8tMZxiTF1BF98tNGJ99DZAbu9N4=
+			</data>
+			<key>hash2</key>
+			<data>
+			miYj2y/qBhUDMYo4hfUcmEm0BgsMdPmlVkS9EiqY6TY=
 			</data>
 		</dict>
 		<key>LaunchImage-1100-Landscape-2436h@3x.png</key>
@@ -2129,11 +2218,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			azXPf8ZpdkvWEe+f4xZEVyRs+u0=
+			DP9kht/aevAuXs9OLkOvpiprCO8=
 			</data>
 			<key>hash2</key>
 			<data>
-			uOwQx80KLQAtjaB3Z4wUe5d22dYmwxxBd3iprS6ZIhM=
+			cDfQbBJO/WYIYWYEWu23IUJ6ocE9JJUhAcKvG7YgXEM=
 			</data>
 		</dict>
 		<key>app/app.js</key>
@@ -2162,33 +2251,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			49/T/HWk1B08Pqabv8LlIVmRnhk=
+			GOZ1lP+bCcc1GpfiVyGL6HWulkI=
 			</data>
 			<key>hash2</key>
 			<data>
-			v3NGargtyFrd83EJsoo1M548pmgzcU+PJapqTLY8InU=
+			QOCsAwiUjVwelbpjBTbnhryg8kV3Gdh57kC/S5GNXM0=
 			</data>
 		</dict>
 		<key>app/main-page.xml</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2tt5QUc3voQpQIga1hqL7SAIAHc=
+			NK0ruOSRA1ck9rm8Qn1TPPKnxmM=
 			</data>
 			<key>hash2</key>
 			<data>
-			2qkDRn99iZyOUvzkQwbbVR3/QtvR/cS5mQU7WrM0fz4=
+			gu5TGpwXGVd5oY+Pl7skwQU3uvQ32AgNo8JDWUxNjL0=
 			</data>
 		</dict>
 		<key>app/main-view-model.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+XelK0+zH+mEQVYj91l+kUwkdQ0=
+			rcg7GeeTSRscbqD9i0bNnzLlkvw=
 			</data>
 			<key>hash2</key>
 			<data>
-			Un3i7m7zNw2vJ7zmk5YAadaAuQkDDmRo86+khGOQlVM=
+			AbpHGcgLb+kRsJGnwFEktk7uzpZOCcBY74+YBdrKVGs=
 			</data>
 		</dict>
 		<key>app/package.json</key>
@@ -2211,6 +2300,72 @@
 			<key>hash2</key>
 			<data>
 			X5pHYco8Emfivn+R0JfB7m2/Wmi+3nt0u8Es7slK14U=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-sqlite/.npmignore</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			d86FUH6hNfCLnGwWX71i21wpY2M=
+			</data>
+			<key>hash2</key>
+			<data>
+			AYBnoxg+eKgRdNqcJd5OO3jT8ZGMIon1bYXDhEVyALE=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-sqlite/LICENSE</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mmtZ7Pc/8uREL0e3Q0ZsUqZoRJg=
+			</data>
+			<key>hash2</key>
+			<data>
+			WZDxCM/T5ib021DxWjUk65gvYEABVd2VzGc1Y6hVO/4=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-sqlite/README.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8v78bHnc0YJs3CwgccM8I6WlW9o=
+			</data>
+			<key>hash2</key>
+			<data>
+			6gaDAzeqBDZi4ugVcR8iqt2YedWF8aOIe71VnuBXvrg=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-sqlite/changelog</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EZaLGkwuX/hLxEaT6AHg7SFUgkk=
+			</data>
+			<key>hash2</key>
+			<data>
+			PP8qFZEIt/fyZLvSlmaxpLGKjTy7B2r+QCHG0HW/63Q=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-sqlite/package.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rqa+8jguPE1nkkCpvO4xMj/a4CA=
+			</data>
+			<key>hash2</key>
+			<data>
+			qZtMzKN1djDyEU1K1nB7QjCwKKjJNXQV16IAU0dfUrE=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-sqlite/sqlite.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LPv1sgoRwKKPInaPHBWq1xDsCPY=
+			</data>
+			<key>hash2</key>
+			<data>
+			ydKiEQcW1UW6R5YRnCp/UFzAL9fzNrC276PlptD3k3k=
 			</data>
 		</dict>
 		<key>app/tns_modules/nativescript-theme-core/css/aqua.css</key>
@@ -6116,6 +6271,61 @@
 			<key>hash2</key>
 			<data>
 			vptz0pUPfuyVX66ce+1E2NtC7vI23QYWGXISQMpVdQk=
+			</data>
+		</dict>
+		<key>app/views/questions/questions-view-model.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kiuN/RuE/3MhjYoaL1gjwr4ZSYo=
+			</data>
+			<key>hash2</key>
+			<data>
+			9+OAVH8V/DM3ybBT8bgAlScz3ZfGf35xkJDS94zwp8o=
+			</data>
+		</dict>
+		<key>app/views/questions/questions.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5udYoJ0BQr/Wbhp1aVlXhR7s24g=
+			</data>
+			<key>hash2</key>
+			<data>
+			QUQeQuGKEmmU/4G/KZXmsLa6OfYcVFnuTQzYwM463w0=
+			</data>
+		</dict>
+		<key>app/views/questions/questions.xml</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WQBJtRdYJmidu0gjHa65mYROtzQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			n1TbhPyvksoXMnYraVoqD9xXvRZWLW/INZgNN5P+DDs=
+			</data>
+		</dict>
+		<key>app/views/summary/summary.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+			</data>
+			<key>hash2</key>
+			<data>
+			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+			</data>
+		</dict>
+		<key>app/views/summary/summary.xml</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0aHQqpUTmZEH+o1aGb4Bn1Yi9Pk=
+			</data>
+			<key>hash2</key>
+			<data>
+			AsCQx1y7FiZRw4nBFg+7taDecIqa8tihlVzKr3SEVqk=
 			</data>
 		</dict>
 		<key>build.xcconfig</key>

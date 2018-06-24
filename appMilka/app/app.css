@@ -4,3 +4,49 @@
 .btn {
     font-size: 18;
 }
+.menu{
+  text-align: center;
+  width: 100%;
+  height: 150px;
+  margin-top: 20px;
+  background-color: lightblue;
+  color: white;
+  font-size: 20pt;
+  font-weight: bold;
+  padding: 50px;
+}
+
+.questionTitle{
+  font-size: 30pt;
+  color: white;
+}
+.container{
+  margin-top:60px;
+  height: 400px;
+}
+.questionNum{
+  text-transform: uppercase;
+  font-size: 10pt;
+  line-height: 1.9em;
+}
+.h2{
+  font-size: 20pt;
+  line-height: 2em;
+}
+.answer{
+  height: 100px;
+  text-align: center;
+  background-color: #4fd6bb;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+}
+.buttonProgress{
+  width: 100%;
+  margin-top: 60px;
+  height: 290px;
+  border-radius: 20px;
+  background-color: green;
+  color: white;
+  font-size: 20pt;
+}

@@ -14,6 +14,8 @@
 		7339067C3A5D4FA6AA8DCB40 /* build.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 94F1501D027E48EEA53FFE52 /* build.xcconfig */; };
 		30880FBD9B674497A41BA18E /* TNSWidgets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDF4021212E941EEA2B923CD /* TNSWidgets.framework */; };
 		446ACA99877D41D9BA3B5CE4 /* TNSWidgets.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EDF4021212E941EEA2B923CD /* TNSWidgets.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3D75FAE144984EDE8B3F8587 /* sqlitewrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E4F3066C944D4F851928D1 /* sqlitewrapper.framework */; };
+		602F2D62095A4CB998BA068B /* sqlitewrapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18E4F3066C944D4F851928D1 /* sqlitewrapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,6 +26,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				446ACA99877D41D9BA3B5CE4 /* TNSWidgets.framework in Embed Frameworks */,
+				602F2D62095A4CB998BA068B /* sqlitewrapper.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,6 +48,7 @@
 		F081A27C5DE240B0AFFCF5E2 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = LaunchScreen.storyboard; path = "appMilka/Resources/LaunchScreen.storyboard"; sourceTree = "<group>"; fileEncoding = 4; };
 		94F1501D027E48EEA53FFE52 /* build.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = build.xcconfig; path = "appMilka/Resources/build.xcconfig"; sourceTree = "<group>"; fileEncoding = 4; };
 		EDF4021212E941EEA2B923CD /* TNSWidgets.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TNSWidgets.framework; path = "$(SRCROOT)/../../node_modules/tns-core-modules-widgets/platforms/ios/TNSWidgets.framework"; sourceTree = "<group>"; };
+		18E4F3066C944D4F851928D1 /* sqlitewrapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = sqlitewrapper.framework; path = "$(SRCROOT)/../../node_modules/nativescript-sqlite/platforms/ios/sqlitewrapper.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30880FBD9B674497A41BA18E /* TNSWidgets.framework in Frameworks */,
+				3D75FAE144984EDE8B3F8587 /* sqlitewrapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				EDF4021212E941EEA2B923CD /* TNSWidgets.framework */,
+				18E4F3066C944D4F851928D1 /* sqlitewrapper.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -350,6 +356,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../node_modules/tns-core-modules-widgets/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-sqlite/platforms/ios\"",
 				);
 			};
 			name = Debug;
@@ -372,6 +379,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../node_modules/tns-core-modules-widgets/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-sqlite/platforms/ios\"",
 				);
 			};
 			name = Release;

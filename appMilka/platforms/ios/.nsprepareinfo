@@ -1,20 +1,27 @@
 {
-	"time": "Sat Jun 23 2018 18:05:20 GMT+0200 (Central European Summer Time)",
+	"time": "Sun Jun 24 2018 13:57:33 GMT+0200 (Central European Summer Time)",
 	"nativePlatformStatus": "3",
 	"bundle": false,
 	"release": false,
-	"changesRequireBuild": true,
-	"projectFileHash": "38fef5d12ee26de266e575d913cc3ad67f8c72f1fca40d84fb13fdba934dbec9",
-	"changesRequireBuildTime": "Sat Jun 23 2018 18:05:20 GMT+0200 (Central European Summer Time)",
+	"changesRequireBuild": false,
+	"projectFileHash": "68d9401777f1995593917ec1ff11baa1455aa7f00c5e0728a07f1880e189d400",
+	"changesRequireBuildTime": "Sat Jun 23 2018 21:29:19 GMT+0200 (Central European Summer Time)",
 	"appFilesHashes": {
+		"/Users/aleksandernygardtonheim/assessmentMilka/appMilka/app/views/summary/summary.js": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
 		"/Users/aleksandernygardtonheim/assessmentMilka/appMilka/app/app-root.xml": "900a386cb2d8abc9573413eb3aff45448dcd3608",
-		"/Users/aleksandernygardtonheim/assessmentMilka/appMilka/app/app.css": "6b35cf7fc669764bd611ef9fe3164457246cfaed",
+		"/Users/aleksandernygardtonheim/assessmentMilka/appMilka/app/app.css": "d5b7b3a4ce7d9fb4d00dce95173baea51f02a101",
 		"/Users/aleksandernygardtonheim/assessmentMilka/appMilka/app/app.js": "ffc3603ba497e733dbb28ec3badadaa8df923f22",
 		"/Users/aleksandernygardtonheim/assessmentMilka/appMilka/app/bundle-config.js": "d17c2570811747318a75d48cef336b3c2945cf07",
-		"/Users/aleksandernygardtonheim/assessmentMilka/appMilka/app/main-page.js": "e3dfd3fc75a4d41d3c3ea69bbfc2e52159919e19",
-		"/Users/aleksandernygardtonheim/assessmentMilka/appMilka/app/main-page.xml": "dadb79414737be842940881ad61a8bed20080077",
-		"/Users/aleksandernygardtonheim/assessmentMilka/appMilka/app/main-view-model.js": "f977a52b4fb31fe984415623f7597e914c24750d",
+		"/Users/aleksandernygardtonheim/assessmentMilka/appMilka/app/main-page.js": "68a650b81a98680ecb9aac21bdc87e886da47c34",
+		"/Users/aleksandernygardtonheim/assessmentMilka/appMilka/app/main-page.xml": "34ad2bb8e491035724f6b9bc427d533cf2a7c663",
+		"/Users/aleksandernygardtonheim/assessmentMilka/appMilka/app/main-view-model.js": "adc83b19e793491b1c6ea0fd8b46cd9f32e592fc",
 		"/Users/aleksandernygardtonheim/assessmentMilka/appMilka/app/package.json": "76d2f371ccaf38f64ed764513b2b13292c218382",
-		"/Users/aleksandernygardtonheim/assessmentMilka/appMilka/app/references.d.ts": "c83a3304d98c2586359871f5d8ac10c8aa8af848"
+		"/Users/aleksandernygardtonheim/assessmentMilka/appMilka/app/references.d.ts": "c83a3304d98c2586359871f5d8ac10c8aa8af848",
+		"/Users/aleksandernygardtonheim/assessmentMilka/appMilka/app/views/questions/questions-view-model.js": "00062206d9af0849ff999e13018604f7368091f4",
+		"/Users/aleksandernygardtonheim/assessmentMilka/appMilka/app/views/questions/questions.js": "01172db091518466b276cb3ffbb4cd5981757d34",
+		"/Users/aleksandernygardtonheim/assessmentMilka/appMilka/app/views/questions/questions.xml": "cfd06d4f78dc29688c3a0e463fc87903def4fad5",
+		"/Users/aleksandernygardtonheim/assessmentMilka/appMilka/app/views/questions/questionsone.js": "16caa32d55b231bf2a1e51390a29137b40ac0dfd",
+		"/Users/aleksandernygardtonheim/assessmentMilka/appMilka/app/views/questions/questionsone.xml": "fed3d26653111f07fa4dbafb20e34afc9bbdb609",
+		"/Users/aleksandernygardtonheim/assessmentMilka/appMilka/app/views/summary/summary.xml": "d1a1d0aa9513999107fa8d5a19be019f5622f4f9"
 	}
 }
