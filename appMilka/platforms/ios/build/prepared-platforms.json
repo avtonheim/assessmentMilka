@@ -1,6 +1,8 @@
 {
     "nativescript-sqlite": true,
     "nativescript-theme-core": true,
+    "nativescript-ui-chart": true,
     "tns-core-modules": true,
+    "nativescript-ui-core": true,
     "tns-core-modules-widgets": true
 }

@@ -1,5 +1,5 @@
 
-<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" class="page">
+<Page navigatingTo="onNavigatingTo">
     <Page.actionBar>
         <ActionBar title="Assessment" icon="" class="action-bar">
         </ActionBar>
@@ -8,6 +8,8 @@
 <StackLayout class="p-10">
 <StackLayout>
 <Label class="h1" text="EMR"/>
+<Button text="print out" tap="{{ select }}"/>
+<Button text="Delete" tap="{{ delete }}"/>
 </StackLayout>
 <GridLayout columns="*" rows="*,*,*,*,*,*,*,*,*">
 
@@ -15,11 +17,11 @@
     <Label class="questionNum" text="question 1"/>
     <Label class="h2" text="It is easy to use the EMRs in the reporting process" textWrap="true"/>
   <GridLayout columns="*,*,*,*,*" row="*">
-    <Button col="0" row="0" class="answer" text="Agree" textWrap="true" tap="{{ insert }}"/>
-    <Button col="1" row="0" class="answer" text="Partially agree" textWrap="true" tap="{{ insert }}"/>
-    <Button col="2" row="0" class="answer" text="Neutral" textWrap="true" tap="{{ insert }}"/>
-    <Button col="3" row="0" class="answer" text="Partially disagree" textWrap="true" tap="{{ insert }}"/>
-    <Button col="4" row="0" class="answer" text="Disagree" textWrap="true" tap="{{ insert }}"/>
+    <Button col="0" row="0" class="answer" value="1" context="Question one" text="Agree" textWrap="true" tap="{{ insert }}"/>
+    <Button col="1" row="0" class="answer" value="1" context="Question one" text="Partially agree" textWrap="true" tap="{{ insert }}"/>
+    <Button col="2" row="0" class="answer" value="1" context="Question one" text="Neutral" textWrap="true" tap="{{ insert }}"/>
+    <Button col="3" row="0" class="answer" value="1" context="Question one" text="Partially disagree" textWrap="true" tap="{{ insert }}"/>
+    <Button col="4" row="0" class="answer" value="1" context="Question one" text="Disagree" textWrap="true" tap="{{ insert }}"/>
   </GridLayout>
 </StackLayout>
   <StackLayout class="hr-light m-10" col="0" row="1"></StackLayout>
@@ -28,11 +30,11 @@
   <Label class="questionNum" text="question 2"/>
   <Label class="h2" text="The EMRs is up and available when I need it" textWrap="true"/>
   <GridLayout columns="*,*,*,*,*" row="*">
-    <Button col="0" row="0" class="answer" text="Agree" textWrap="true" tap="{{ insert }}"/>
-    <Button col="1" row="0" class="answer" text="Partially agree" textWrap="true" tap="{{ insert }}"/>
-    <Button col="2" row="0" class="answer" text="Neutral" textWrap="true" tap="{{ insert }}"/>
-    <Button col="3" row="0" class="answer" text="Partially disagree" textWrap="true" tap="{{ insert }}"/>
-    <Button col="4" row="0" class="answer" text="Disagree" textWrap="true" tap="{{ insert }}"/>
+    <Button col="0" row="0" class="answer" value="1" context="Question two" text="Agree" textWrap="true" tap="{{ insert }}"/>
+    <Button col="1" row="0" class="answer" value="1" context="Question two" text="Partially agree" textWrap="true" tap="{{ insert }}"/>
+    <Button col="2" row="0" class="answer" value="1" context="Question two" text="Neutral" textWrap="true" tap="{{ insert }}"/>
+    <Button col="3" row="0" class="answer" value="1" context="Question two" text="Partially disagree" textWrap="true" tap="{{ insert }}"/>
+    <Button col="4" row="0" class="answer" value="1" context="Question two" text="Disagree" textWrap="true" tap="{{ insert }}"/>
   </GridLayout>
 </StackLayout>
 
@@ -42,11 +44,11 @@
   <Label class="questionNum" text="question 3"/>
   <Label class="h2" text="The use of EMRs hasten the reporting process" textWrap="true"/>
   <GridLayout columns="*,*,*,*,*" row="*">
-    <Button col="0" row="0" class="answer" text="Agree" textWrap="true" tap="{{ insert }}"/>
-    <Button col="1" row="0" class="answer" text="Partially agree" textWrap="true" tap="{{ insert }}"/>
-    <Button col="2" row="0" class="answer" text="Neutral" textWrap="true" tap="{{ insert }}"/>
-    <Button col="3" row="0" class="answer" text="Partially disagree" textWrap="true" tap="{{ insert }}"/>
-    <Button col="4" row="0" class="answer" text="Disagree" textWrap="true" tap="{{ insert }}"/>
+    <Button col="0" row="0" class="answer" value="1" context="Question three" text="Agree" textWrap="true" tap="{{ insert }}"/>
+    <Button col="1" row="0" class="answer" value="1" context="Question three" text="Partially agree" textWrap="true" tap="{{ insert }}"/>
+    <Button col="2" row="0" class="answer" value="1" context="Question three" text="Neutral" textWrap="true" tap="{{ insert }}"/>
+    <Button col="3" row="0" class="answer" value="1" context="Question three" text="Partially disagree" textWrap="true" tap="{{ insert }}"/>
+    <Button col="4" row="0" class="answer" value="1" context="Question three" text="Disagree" textWrap="true" tap="{{ insert }}"/>
   </GridLayout>
 </StackLayout>
 
@@ -56,11 +58,11 @@
   <Label class="questionNum" text="question 4"/>
   <Label class="h2" text="I have undergone enough training in using EMRs in a reporting process" textWrap="true"/>
   <GridLayout columns="*,*,*,*,*" row="*">
-    <Button col="0" row="0" class="answer" text="Agree" textWrap="true" tap="{{ insert }}"/>
-    <Button col="1" row="0" class="answer" text="Partially agree" textWrap="true" tap="{{ insert }}"/>
-    <Button col="2" row="0" class="answer" text="Neutral" textWrap="true" tap="{{ insert }}"/>
-    <Button col="3" row="0" class="answer" text="Partially disagree" textWrap="true" tap="{{ insert }}"/>
-    <Button col="4" row="0" class="answer" text="Disagree" textWrap="true" tap="{{ insert }}"/>
+    <Button col="0" row="0" class="answer" value="1" context="Question four" text="Agree" textWrap="true" tap="{{ insert }}"/>
+    <Button col="1" row="0" class="answer" value="1" context="Question four" text="Partially agree" textWrap="true" tap="{{ insert }}"/>
+    <Button col="2" row="0" class="answer" value="1" context="Question four" text="Neutral" textWrap="true" tap="{{ insert }}"/>
+    <Button col="3" row="0" class="answer" value="1" context="Question four" text="Partially disagree" textWrap="true" tap="{{ insert }}"/>
+    <Button col="4" row="0" class="answer" value="1" context="Question four" text="Disagree" textWrap="true" tap="{{ insert }}"/>
   </GridLayout>
 </StackLayout>
 
@@ -70,11 +72,11 @@
   <Label class="questionNum" text="question 5"/>
   <Label class="h2" text="I am motivated to use the EMRs in the reporting process" textWrap="true"/>
   <GridLayout columns="*,*,*,*,*" row="*">
-    <Button col="0" row="0" class="answer" text="Agree" textWrap="true" tap="{{ insert }}"/>
-    <Button col="1" row="0" class="answer" text="Partially agree" textWrap="true" tap="{{ insert }}"/>
-    <Button col="2" row="0" class="answer" text="Neutral" textWrap="true" tap="{{ insert }}"/>
-    <Button col="3" row="0" class="answer" text="Partially disagree" textWrap="true" tap="{{ insert }}"/>
-    <Button col="4" row="0" class="answer" text="Disagree" textWrap="true" tap="{{ insert }}"/>
+    <Button col="0" row="0" class="answer" value="1" context="Question five" text="Agree" textWrap="true" tap="{{ insert }}"/>
+    <Button col="1" row="0" class="answer" value="1" context="Question five" text="Partially agree" textWrap="true" tap="{{ insert }}"/>
+    <Button col="2" row="0" class="answer" value="1" context="Question five" text="Neutral" textWrap="true" tap="{{ insert }}"/>
+    <Button col="3" row="0" class="answer" value="1" context="Question five" text="Partially disagree" textWrap="true" tap="{{ insert }}"/>
+    <Button col="4" row="0" class="answer" value="1" context="Question five" text="Disagree" textWrap="true" tap="{{ insert }}"/>
   </GridLayout>
 </StackLayout>
 

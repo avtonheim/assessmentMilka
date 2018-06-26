@@ -5,12 +5,13 @@ var frameModule = require('ui/frame');
 
 function createViewModel(database) {
     var viewModel = new Observable();
-    viewModel.Mood = new ObservableArray([]);
+    //viewModel.Mood = new ObservableArray([]);
 
     // insert a new record
     viewModel.insert = function(args) {
-        database.execSQL("INSERT OR REPLACE INTO mood (moodState, timestamp) VALUES (?, date())", [moodVal]).then(id => {
-                console.log("The new record id is: " );
+      var answer = args.object.text;
+        database.execSQL("INSERT OR REPLACE INTO questions (question, A, PA, N, PD, D) VALUES (?", [answer]).then(id => {
+                console.log("The new record id is: " + answer + rows[row]);
             }, error => {
             console.log("INSERT ERROR", error);
         });
