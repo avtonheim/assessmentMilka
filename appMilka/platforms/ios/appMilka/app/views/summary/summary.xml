@@ -1,10 +1,10 @@
 
-<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" class="page">
+<Page navigatingTo="onPageLoaded" class="page">
     <Page.actionBar>
         <ActionBar title="Assessment" icon="" class="action-bar">
         </ActionBar>
     </Page.actionBar>
 <StackLayout class="p-10">
-    <Label text="Summary"/>
-  </StackLayout>
+
+</StackLayout>
 </Page>

@@ -62,7 +62,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		C7m8Fn6frEDUQ/0x796PfZlF3aM=
+		W51zGX7jqMejTp1NhSij0CffcL8=
 		</data>
 		<key>Frameworks/NativeScript.framework/Info.plist</key>
 		<data>
@@ -202,7 +202,7 @@
 		</data>
 		<key>LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		HwW2QlYTJHZ5H4+gOyO7WMmZjoo=
+		qTtmYQlX8TviOlBFm2+gZJKACDo=
 		</data>
 		<key>LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -210,7 +210,7 @@
 		</data>
 		<key>LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		4TO+LotyzzByDpgiDAlXiMuteOc=
+		UR5RO9n8M1pkMaof3LSLy5I5Pko=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -2042,31 +2042,23 @@
 		</data>
 		<key>app/views/questions/questions-view-model.js</key>
 		<data>
-		AAYiBtmvCEn/mZ4TAYYE9zaAkfQ=
+		W67mxV9LWewyIskCwOlQOYQRmDM=
 		</data>
 		<key>app/views/questions/questions.js</key>
 		<data>
-		ARctsJFRhGaydss/+7TNWYF1fTQ=
+		1IkXz1xsEAEeGmttFhzgnuPYeTQ=
 		</data>
 		<key>app/views/questions/questions.xml</key>
 		<data>
-		z9BtT3jcKWiMOg5GP8h5A970+tU=
-		</data>
-		<key>app/views/questions/questionsone.js</key>
-		<data>
-		FsqjLVWyMb8qHlE5CikTe0CsDf0=
-		</data>
-		<key>app/views/questions/questionsone.xml</key>
-		<data>
-		/tPSZlMRHwf6Tbr7IONK/Ju9tgk=
+		SqQEUKjfAWd3663S87lRm4cx/ZM=
 		</data>
 		<key>app/views/summary/summary.js</key>
 		<data>
-		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+		kAUnco+tPQhFcvNt0rZPSpC0smM=
 		</data>
 		<key>app/views/summary/summary.xml</key>
 		<data>
-		0aHQqpUTmZEH+o1aGb4Bn1Yi9Pk=
+		V1eFFYL87RbbrH/IPwa3zeMMjeg=
 		</data>
 		<key>build.xcconfig</key>
 		<data>
@@ -2242,11 +2234,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			C7m8Fn6frEDUQ/0x796PfZlF3aM=
+			W51zGX7jqMejTp1NhSij0CffcL8=
 			</data>
 			<key>hash2</key>
 			<data>
-			7+PqBih5rC/o919Wh2TiRYzlAWNlh9Lsde2DtEcY8mM=
+			DCnrsV90JfrYQXVNTJzoPFy+dqVc6NdQ0MsHOuMrIis=
 			</data>
 		</dict>
 		<key>Frameworks/NativeScript.framework/Info.plist</key>
@@ -2616,11 +2608,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HwW2QlYTJHZ5H4+gOyO7WMmZjoo=
+			qTtmYQlX8TviOlBFm2+gZJKACDo=
 			</data>
 			<key>hash2</key>
 			<data>
-			S2RKyLvNcCu0PX8yVpllR2Ma4jvDz+LMMdIo3Ni+w9s=
+			7Utl64mlAQXWxwDuYUjo4l7rfhtmpjViM/OHgl8BiIY=
 			</data>
 		</dict>
 		<key>LaunchScreen.storyboardc/Info.plist</key>
@@ -2638,11 +2630,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4TO+LotyzzByDpgiDAlXiMuteOc=
+			UR5RO9n8M1pkMaof3LSLy5I5Pko=
 			</data>
 			<key>hash2</key>
 			<data>
-			TanwG5L4gIrz+YNgWLEu5/uPpK6gfWDj63VE4hxx6f0=
+			JLTXiTPEsQw0ugNhR7A+fD5cTZC95ptj5/GDsjHvwds=
 			</data>
 		</dict>
 		<key>app/app-root.xml</key>
@@ -7665,77 +7657,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AAYiBtmvCEn/mZ4TAYYE9zaAkfQ=
+			W67mxV9LWewyIskCwOlQOYQRmDM=
 			</data>
 			<key>hash2</key>
 			<data>
-			wdHi8V6svcfqt2acKlEF8ZSZnfyrJOsorr1IvrDZnKM=
+			2aybR9SkPnO+0fZ0X4L5qn2W91UrhLecc7sUG9w0h1o=
 			</data>
 		</dict>
 		<key>app/views/questions/questions.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ARctsJFRhGaydss/+7TNWYF1fTQ=
+			1IkXz1xsEAEeGmttFhzgnuPYeTQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			YdhIsAinImkh9Wlae5sF0w1QrauY8jrK7iYuCrST2MI=
+			8Y/LHvnKyOTop4LXiQtlI/QmYmRj3MDRQrYBRDMdwS4=
 			</data>
 		</dict>
 		<key>app/views/questions/questions.xml</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			z9BtT3jcKWiMOg5GP8h5A970+tU=
+			SqQEUKjfAWd3663S87lRm4cx/ZM=
 			</data>
 			<key>hash2</key>
 			<data>
-			gJdRO4Df/Y//f5MK2/8K17xvgW8IruxyFZUBxBMqZok=
-			</data>
-		</dict>
-		<key>app/views/questions/questionsone.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			FsqjLVWyMb8qHlE5CikTe0CsDf0=
-			</data>
-			<key>hash2</key>
-			<data>
-			O7AHI7me9/8atYElH/nkEQ1KWEbd3PIuElD1ERb8eq4=
-			</data>
-		</dict>
-		<key>app/views/questions/questionsone.xml</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			/tPSZlMRHwf6Tbr7IONK/Ju9tgk=
-			</data>
-			<key>hash2</key>
-			<data>
-			syDzrhvkSmbBCYqB0wOJihTGCZz9SjgzH0fOiSiDY1I=
+			QUTzWt4QbXWmsSma9bUjti+P4UkXd2QfFCFQX1KO74k=
 			</data>
 		</dict>
 		<key>app/views/summary/summary.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+			kAUnco+tPQhFcvNt0rZPSpC0smM=
 			</data>
 			<key>hash2</key>
 			<data>
-			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+			XoEoQWrEDNi65A/ZfNVZXR/6qTo9HElAg0tR7oGOmQ0=
 			</data>
 		</dict>
 		<key>app/views/summary/summary.xml</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0aHQqpUTmZEH+o1aGb4Bn1Yi9Pk=
+			V1eFFYL87RbbrH/IPwa3zeMMjeg=
 			</data>
 			<key>hash2</key>
 			<data>
-			AsCQx1y7FiZRw4nBFg+7taDecIqa8tihlVzKr3SEVqk=
+			cWgW5Ln8dar/s/Y8/Z1TpgPSGkdq+DINFqkC0tYpX2o=
 			</data>
 		</dict>
 		<key>build.xcconfig</key>
