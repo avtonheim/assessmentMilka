@@ -2,13 +2,15 @@
 <Page navigatingTo="onNavigatingTo">
     <Page.actionBar>
         <ActionBar title="Assessment" icon="" class="action-bar">
+          <ActionBar.actionItems>
+              <ActionItem text="Export data" tap="{{ select }}" ios.position="right" />
+          </ActionBar.actionItems>
         </ActionBar>
     </Page.actionBar>
 <ScrollView>
 <StackLayout class="p-10">
 <StackLayout>
 <Label class="h1" text="EMR"/>
-<Button text="print out" tap="{{ select }}"/>
 </StackLayout>
 <GridLayout columns="*" rows="*,*,*,*,*,*,*,*,*">
 
@@ -158,7 +160,7 @@
 </GridLayout>
 
 <StackLayout>
-  <Button class="buttonProgress" text="Submit your answers!" tap="pageHome"/>
+  <Button class="buttonProgress" text="Submit your answers!" tap="pageHome"/> <!--Her vil vi ha insert funksjonen slik at brukarane kan endre svar undervegs (dersom dei vil då)-->
 </StackLayout>
 </StackLayout>
 </ScrollView>

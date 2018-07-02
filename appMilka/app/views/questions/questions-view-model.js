@@ -45,7 +45,6 @@ function createViewModel(database) {
       database.all("SELECT question, A, PA, N, PD, D from questions").then(rows => {
         for(var row in rows) {
         this.Questions.push({question: rows[row][0], agree: rows[row][1], pagree: rows[row][2], neutral: rows[row][3], pdisagree: rows[row][4], disagree: rows[row][5]});
-          console.log(rows[row]);
         }
           }, error => {
           console.log("SELECT ERROR", error);
