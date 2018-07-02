@@ -91,11 +91,11 @@
     <Label class="questionNum" text="question 6"/>
     <Label class="h2" text="It is easy to use the paper in the reporting process" textWrap="true"/>
   <GridLayout columns="*,*,*,*,*" row="*">
-    <Button col="0" row="0" class="answer" text="Agree" textWrap="true" tap="{{ insert }}"/>
-    <Button col="1" row="0" class="answer" text="Partially agree" textWrap="true" tap="{{ insert }}"/>
-    <Button col="2" row="0" class="answer" text="Neutral" textWrap="true" tap="{{ insert }}"/>
-    <Button col="3" row="0" class="answer" text="Partially disagree" textWrap="true" tap="{{ insert }}"/>
-    <Button col="4" row="0" class="answer" text="Disagree" textWrap="true" tap="{{ insert }}"/>
+    <Button col="0" row="0" class="answer" value="1" context="Question six" text="Agree" textWrap="true" tap="{{ insert }}"/>
+    <Button col="1" row="0" class="answer" value="1" context="Question six" text="Partially agree" textWrap="true" tap="{{ insert }}"/>
+    <Button col="2" row="0" class="answer" value="1" context="Question six" text="Neutral" textWrap="true" tap="{{ insert }}"/>
+    <Button col="3" row="0" class="answer" value="1" context="Question six" text="Partially disagree" textWrap="true" tap="{{ insert }}"/>
+    <Button col="4" row="0" class="answer" value="1" context="Question six" text="Disagree" textWrap="true" tap="{{ insert }}"/>
   </GridLayout>
 </StackLayout>
   <StackLayout class="hr-light m-10" col="0" row="1"></StackLayout>
@@ -104,11 +104,11 @@
   <Label class="questionNum" text="question 7"/>
   <Label class="h2" text="Use of paper is reliable in the reporting process" textWrap="true"/>
   <GridLayout columns="*,*,*,*,*" row="*">
-    <Button col="0" row="0" class="answer" text="Agree" textWrap="true" tap="{{ insert }}"/>
-    <Button col="1" row="0" class="answer" text="Partially agree" textWrap="true" tap="{{ insert }}"/>
-    <Button col="2" row="0" class="answer" text="Neutral" textWrap="true" tap="{{ insert }}"/>
-    <Button col="3" row="0" class="answer" text="Partially disagree" textWrap="true" tap="{{ insert }}"/>
-    <Button col="4" row="0" class="answer" text="Disagree" textWrap="true" tap="{{ insert }}"/>
+    <Button col="0" row="0" class="answer" value="1" context="Question seven" text="Agree" textWrap="true" tap="{{ insert }}"/>
+    <Button col="1" row="0" class="answer" value="1" context="Question seven" text="Partially agree" textWrap="true" tap="{{ insert }}"/>
+    <Button col="2" row="0" class="answer" value="1" context="Question seven" text="Neutral" textWrap="true" tap="{{ insert }}"/>
+    <Button col="3" row="0" class="answer" value="1" context="Question seven" text="Partially disagree" textWrap="true" tap="{{ insert }}"/>
+    <Button col="4" row="0" class="answer" value="1" context="Question seven" text="Disagree" textWrap="true" tap="{{ insert }}"/>
   </GridLayout>
 </StackLayout>
 
@@ -118,11 +118,11 @@
   <Label class="questionNum" text="question 8"/>
   <Label class="h2" text="The use of paper hasten the reporting process" textWrap="true"/>
   <GridLayout columns="*,*,*,*,*" row="*">
-    <Button col="0" row="0" class="answer" text="Agree" textWrap="true" tap="{{ insert }}"/>
-    <Button col="1" row="0" class="answer" text="Partially agree" textWrap="true" tap="{{ insert }}"/>
-    <Button col="2" row="0" class="answer" text="Neutral" textWrap="true" tap="{{ insert }}"/>
-    <Button col="3" row="0" class="answer" text="Partially disagree" textWrap="true" tap="{{ insert }}"/>
-    <Button col="4" row="0" class="answer" text="Disagree" textWrap="true" tap="{{ insert }}"/>
+    <Button col="0" row="0" class="answer" value="1" context="Question eight" text="Agree" textWrap="true" tap="{{ insert }}"/>
+    <Button col="1" row="0" class="answer" value="1" context="Question eight" text="Partially agree" textWrap="true" tap="{{ insert }}"/>
+    <Button col="2" row="0" class="answer" value="1" context="Question eight" text="Neutral" textWrap="true" tap="{{ insert }}"/>
+    <Button col="3" row="0" class="answer" value="1" context="Question eight" text="Partially disagree" textWrap="true" tap="{{ insert }}"/>
+    <Button col="4" row="0" class="answer" value="1" context="Question eight" text="Disagree" textWrap="true" tap="{{ insert }}"/>
   </GridLayout>
 </StackLayout>
 
@@ -132,11 +132,11 @@
   <Label class="questionNum" text="question 9"/>
   <Label class="h2" text="Data reporting process is labour intensive when using paper" textWrap="true"/>
   <GridLayout columns="*,*,*,*,*" row="*">
-    <Button col="0" row="0" class="answer" text="Agree" textWrap="true" tap="{{ insert }}"/>
-    <Button col="1" row="0" class="answer" text="Partially agree" textWrap="true" tap="{{ insert }}"/>
-    <Button col="2" row="0" class="answer" text="Neutral" textWrap="true" tap="{{ insert }}"/>
-    <Button col="3" row="0" class="answer" text="Partially disagree" textWrap="true" tap="{{ insert }}"/>
-    <Button col="4" row="0" class="answer" text="Disagree" textWrap="true" tap="{{ insert }}"/>
+    <Button col="0" row="0" class="answer" value="1" context="Question nine" text="Agree" textWrap="true" tap="{{ insert }}"/>
+    <Button col="1" row="0" class="answer" value="1" context="Question nine" text="Partially agree" textWrap="true" tap="{{ insert }}"/>
+    <Button col="2" row="0" class="answer" value="1" context="Question nine" text="Neutral" textWrap="true" tap="{{ insert }}"/>
+    <Button col="3" row="0" class="answer" value="1" context="Question nine" text="Partially disagree" textWrap="true" tap="{{ insert }}"/>
+    <Button col="4" row="0" class="answer" value="1" context="Question nine" text="Disagree" textWrap="true" tap="{{ insert }}"/>
   </GridLayout>
 </StackLayout>
 
@@ -146,11 +146,11 @@
   <Label class="questionNum" text="question 10"/>
   <Label class="h2" text="I have undergone enough training in using paper in the data reporting process" textWrap="true"/>
   <GridLayout columns="*,*,*,*,*" row="*">
-    <Button col="0" row="0" class="answer" text="Agree" textWrap="true" tap="{{ insert }}"/>
-    <Button col="1" row="0" class="answer" text="Partially agree" textWrap="true" tap="{{ insert }}"/>
-    <Button col="2" row="0" class="answer" text="Neutral" textWrap="true" tap="{{ insert }}"/>
-    <Button col="3" row="0" class="answer" text="Partially disagree" textWrap="true" tap="{{ insert }}"/>
-    <Button col="4" row="0" class="answer" text="Disagree" textWrap="true" tap="{{ insert }}"/>
+    <Button col="0" row="0" class="answer" value="1" context="Question ten" text="Agree" textWrap="true" tap="{{ insert }}"/>
+    <Button col="1" row="0" class="answer" value="1" context="Question ten" text="Partially agree" textWrap="true" tap="{{ insert }}"/>
+    <Button col="2" row="0" class="answer" value="1" context="Question ten" text="Neutral" textWrap="true" tap="{{ insert }}"/>
+    <Button col="3" row="0" class="answer" value="1" context="Question ten" text="Partially disagree" textWrap="true" tap="{{ insert }}"/>
+    <Button col="4" row="0" class="answer" value="1" context="Question ten" text="Disagree" textWrap="true" tap="{{ insert }}"/>
   </GridLayout>
 </StackLayout>
 
@@ -159,7 +159,7 @@
 </GridLayout>
 
 <StackLayout>
-  <Button class="buttonProgress" text="Finish" tap="pageHome"/>
+  <Button class="buttonProgress" text="Submit your answers!" tap="pageHome"/>
 </StackLayout>
 </StackLayout>
 </ScrollView>

@@ -1,10 +1,38 @@
 
-<Page navigatingTo="onPageLoaded" class="page">
+<Page navigatingTo="onPageLoaded" class="page" xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:chart="nativescript-ui-chart">
     <Page.actionBar>
         <ActionBar title="Assessment" icon="" class="action-bar">
+          <ActionBar.actionItems>
+              <ActionItem text="select" tap="{{ select }}" ios.position="right" />
+          </ActionBar.actionItems>
         </ActionBar>
     </Page.actionBar>
-<StackLayout class="p-10">
+    <chart:RadCartesianChart class="graphBox" height="350">
+      <chart:RadCartesianChart.series>
 
-</StackLayout>
+      <chart:BarSeries items="{{ Questions }}" categoryProperty="question" valueProperty="agree" showLabels="true">
+                <chart:LineSeries.labelStyle>
+                <chart:PointLabelStyle margin="22" fontStyle="Bold" fillColor="#60B3FC" textSize="18" textColor="White" />
+            </chart:LineSeries.labelStyle>
+          </chart:BarSeries>
+      </chart:RadCartesianChart.series>
+
+      <chart:RadCartesianChart.horizontalAxis>
+         <chart:CategoricalAxis allowPan="true" allowZoom="true" labelFitMode="Rotate"/>
+      </chart:RadCartesianChart.horizontalAxis>
+      <chart:RadCartesianChart.verticalAxis>
+           <chart:LinearAxis horizontalLocation="Left" allowZoom="true" allowPan="true" majorStep="1"/>
+      </chart:RadCartesianChart.verticalAxis>
+      <chart:RadCartesianChart.trackball>
+        <chart:Trackball/>
+      </chart:RadCartesianChart.trackball>
+      <chart:RadCartesianChart.legend>
+      <chart:RadLegendView position="Middle" title="Explanation" height="200" width="200" enableSelection="true"/>
+    </chart:RadCartesianChart.legend>
+    </chart:RadCartesianChart>
+
+
+    <!--http://docs.telerik.com/devtools/nativescript-ui/Controls/NativeScript/Chart/Series/range-bar-->
+    <!-- http://docs.telerik.com/devtools/nativescript-ui/Controls/NativeScript/Gauges/indicators-->
+
 </Page>

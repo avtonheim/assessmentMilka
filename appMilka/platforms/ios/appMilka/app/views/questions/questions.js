@@ -4,8 +4,7 @@ var frameModule = require('ui/frame');
 
 function onNavigatingTo(args){
   var page = args.object;
-
-  (new Sqlite("database.db")).then(db => {
+ (new Sqlite("database.db")).then(db => {
          db.execSQL("CREATE TABLE IF NOT EXISTS questions (id INTEGER PRIMARY KEY AUTOINCREMENT, question text, A text, PA text, N text, PD text, D text)").then(id => {
              page.bindingContext = createViewModel(db);
              console.log("success! Opened the database");

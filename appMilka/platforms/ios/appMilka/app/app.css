@@ -50,6 +50,7 @@
   color: white;
   font-size: 20pt;
 }
-.graphs{
+.graphBox{
   background-color: gray;
+  width: 95%;
 }

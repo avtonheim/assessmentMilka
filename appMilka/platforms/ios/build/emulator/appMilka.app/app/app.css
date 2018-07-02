@@ -50,3 +50,7 @@
   color: white;
   font-size: 20pt;
 }
+.graphBox{
+  background-color: gray;
+  width: 95%;
+}
