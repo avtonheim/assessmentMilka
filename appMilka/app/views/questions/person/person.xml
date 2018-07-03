@@ -1,0 +1,80 @@
+<Page navigatingTo="onNavigatingTo" class="page">
+    <Page.actionBar>
+        <ActionBar title="Assessment" icon="" class="action-bar">
+          <ActionBar.actionItems>
+              <ActionItem text="Next" tap="startQ" ios.position="right" />
+              <ActionItem text="Abort" tap="tapHome" ios.position="left" />
+          </ActionBar.actionItems>
+        </ActionBar>
+    </Page.actionBar>
+<ScrollView>
+  <StackLayout class="p-10">
+    <Label class="h1" text="About you"></Label>
+
+
+    <GridLayout columns="*" rows="*,*,*,*,*,*,*,*,*,*,*,*,*">
+
+      <StackLayout class="personInfo" col="0" row="0">
+          <Label class="h2" text="Study subject ID"/>
+          <Label class="body" text="Type in study subject ID" textWrap="true"/>
+          <TextView id="subject" hint="Click to add text" textWrap="true"/>
+      </StackLayout>
+
+      <StackLayout class="hr-light m-10" col="0" row="1"></StackLayout>
+
+    <StackLayout class="personInfo" col="0" row="2">
+        <Label class="h2" text="Facility"/>
+        <Label class="body" text="Type in your facility" textWrap="true"/>
+        <TextView id="subject" hint="Click to add text" textWrap="true" autocorrect="true"/>
+    </StackLayout>
+
+    <StackLayout class="hr-light m-10" col="0" row="3"></StackLayout>
+
+    <StackLayout class="personInfo" col="0" row="4">
+        <Label class="h2" text="Type of EMR"/>
+        <Label class="body" text="Type in the type of EMR you use" textWrap="true"/>
+        <TextView id="subject" hint="Click to add text" textWrap="true" autocorrect="true"/>
+    </StackLayout>
+
+    <StackLayout class="hr-light m-10" col="0" row="5"></StackLayout>
+
+    <StackLayout class="personInfo" col="0" row="6">
+        <Label class="h2" text="Position"/>
+        <Label class="body" text="Type in your position" textWrap="true"/>
+        <TextView id="subject" hint="Click to add text" textWrap="true" autocorrect="true"/>
+    </StackLayout>
+
+    <StackLayout class="hr-light m-10" col="0" row="7"></StackLayout>
+
+
+    <StackLayout class="personInfo" col="0" row="8">
+        <Label class="h2" text="Education"/>
+        <Label class="body" text="Type in your education" textWrap="true"/>
+        <TextView id="subject" hint="Click to add text" textWrap="true" autocorrect="true"/>
+    </StackLayout>
+
+    <StackLayout class="hr-light m-10" col="0" row="9"></StackLayout>
+
+    <StackLayout class="personInfo" col="0" row="10">
+        <Label class="h2" text="Age"/>
+        <Label class="body" text="Select your age" textWrap="true"/>
+        <Button class="answer" text="20-39" textWrap="true" tap="{{ insert }}"/>
+        <Button class="answer" text="40-59" textWrap="true" tap="{{ insert }}"/>
+        <Button class="answer" text="60-89" textWrap="true" tap="{{ insert }}"/>
+    </StackLayout>
+
+    <StackLayout class="hr-light m-10" col="0" row="11"></StackLayout>
+
+    <StackLayout class="personInfo" col="0" row="12">
+        <Label class="h2" text="Gender"/>
+        <Label class="body" text="Select your gender" textWrap="true"/>
+        <Button class="answer" text="Male" textWrap="true" tap="{{ insert }}"/>
+        <Button class="answer" text="Female" textWrap="true" tap="{{ insert }}"/>
+    </StackLayout>
+
+  </GridLayout>
+
+  <StackLayout class="hr-light m-10" id="marginFix"></StackLayout>
+</StackLayout>
+</ScrollView>
+</Page>

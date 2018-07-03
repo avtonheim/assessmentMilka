@@ -3,7 +3,8 @@
     <Page.actionBar>
         <ActionBar title="Assessment" icon="" class="action-bar">
           <ActionBar.actionItems>
-              <ActionItem text="Export data" tap="{{ select }}" ios.position="right" />
+              <ActionItem text="Print out" tap="{{ select }}" ios.position="right" />
+              <ActionItem text="Abort" tap="tapHome" ios.position="left" />
           </ActionBar.actionItems>
         </ActionBar>
     </Page.actionBar>

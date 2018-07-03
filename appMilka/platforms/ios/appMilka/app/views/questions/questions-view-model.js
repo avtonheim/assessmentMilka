@@ -12,7 +12,7 @@ function createViewModel(database) {
     viewModel.insert = function(args) {
       var moodVal = args.object.value;
       var object = args.object;
-
+      var studyID = "Subject1"
       var assess = args.object.context;
       var checkVal = args.object.text;
       var agree = 0;
@@ -33,7 +33,7 @@ function createViewModel(database) {
       }
       var btn = args.object;
       object.backgroundColor = "#3489db";
-            database.execSQL("INSERT OR REPLACE INTO questions (question, A, PA, N, PD, D) VALUES (?,?,?,?,?,?)", [assess, agree, pagree, neutral, pdisagree, disagree]).then(rows => {
+            database.execSQL("INSERT OR REPLACE INTO questions (studyID, question, A, PA, N, PD, D) VALUES (?,?,?,?,?,?,?)", [studyID, assess, agree, pagree, neutral, pdisagree, disagree]).then(rows => {
                 console.log("The new record id is: " + assess + agree + pagree + neutral + pdisagree + disagree);
             }, error => {
             console.log("INSERT ERROR", error);

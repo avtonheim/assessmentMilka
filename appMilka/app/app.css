@@ -51,7 +51,25 @@
   font-size: 20pt;
 }
 .graphBox{
-  background-color: #c4bdfc;
+  background-color: #EBA0A0;
   width: 95%;
-  border-radius: 15px:
+  border-radius: 15px;
+}
+.graphContainer{
+  background-color: #EBA0A0;
+  border-radius: 15px;
+  margin-top: 20px;
+  padding: 10px;
+}
+.personInfo{
+  margin-top: 20px;
+  min-height: 200px;
+}
+TextView{
+  height: 100px;
+  margin-top: 10px;
+  background-color: #dbdad9;
+}
+#marginFix{
+  margin-bottom: 400px;
 }
