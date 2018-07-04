@@ -1,0 +1,15 @@
+<StackLayout loaded="onPageLoaded">
+      <ListView items="{{ Person }}" style="height: 100%;">
+       <ListView.itemTemplate>
+         <StackLayout class="graphContainer">
+            <Label text="{{ studyID }}"></Label>
+            <Label text="{{ 'Facility : ' + facility }}" textWrap="true"></Label>
+            <Label text="{{ 'EMR: ' + emr }}" textWrap="true"></Label>
+            <Label text="{{ 'Position : ' + position }}" textWrap="true"></Label>
+            <Label text="{{ 'Education : ' + edu }}" textWrap="true"></Label>
+            <Label text="{{ 'Gender : ' + gender }}" textWrap="true"></Label>
+            <Label text="{{ 'Age : ' + age }}" textWrap="true"></Label>
+         </StackLayout>
+        </ListView.itemTemplate>
+      </ListView>
+ </StackLayout>

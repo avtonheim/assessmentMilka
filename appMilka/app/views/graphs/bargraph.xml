@@ -9,12 +9,12 @@
           outerRadiusFactor="0.8"
           expandRadius="0.2"
           legendTitle="Antall"
-          items="{{ Questions }}"
+          items="{{ QuestionsEMR }}"
           categoryProperty="question"
-          valueProperty="agree"
+          valueProperty="answer"
           showLabels="true">
           <chart:LineSeries.labelStyle>
-          <chart:PointLabelStyle margin="5" fontStyle="Bold" fillColor="#60B3FC" textSize="18" textColor="White" />
+          <chart:PointLabelStyle margin="5" fontStyle="Bold" fillColor="#60B3FC" textSize="18" textColor="White"/>
       </chart:LineSeries.labelStyle>
     </chart:BarSeries>
 

@@ -11,7 +11,7 @@ exports.onNavigatingTo = onNavigatingTo;
 
 
 function navigateQuestions(){
-  frameModule.topmost().navigate('views/questions/person/person');
+  frameModule.topmost().navigate('views/questions/questions');
 }
 exports.navigateQuestions = navigateQuestions;
 

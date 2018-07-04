@@ -1,0 +1,11 @@
+<StackLayout loaded="onPageLoaded">
+      <ListView items="{{ Questions }}" style="height: 100%;">
+       <ListView.itemTemplate>
+         <StackLayout class="textContainer">
+            <Label text="{{ studyID }}"></Label>
+            <Label horizontalAlignment="right" text="{{ 'Question ' + question }}" textWrap="true"></Label>
+            <Label horizontalAlignment="right" text="{{ 'Answer: ' + answer }}" textWrap="true"></Label>
+         </StackLayout>
+        </ListView.itemTemplate>
+      </ListView>
+ </StackLayout>

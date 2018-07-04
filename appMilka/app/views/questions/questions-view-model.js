@@ -2,56 +2,106 @@ var Observable = require("data/observable").Observable;
 var ObservableArray = require("data/observable-array").ObservableArray;
 var Sqlite = require("nativescript-sqlite");
 var frameModule = require('ui/frame');
+var dialogs = require("ui/dialogs");
 
 function createViewModel(database) {
     var viewModel = new Observable();
     viewModel.Questions = new ObservableArray([]);
+    viewModel.QuestionsEMR = new ObservableArray([]);
+    viewModel.QuestionsPaper = new ObservableArray([]);
+    viewModel.Person = new ObservableArray([]);
+    viewModel.studyID = "";
+    viewModel.facility = "";
+    viewModel.emr = "";
+    viewModel.position = "";
+    viewModel.edu = "";
+    viewModel.gender = "";
+    viewModel.age = "";
 
 
-    // insert a new record
-    viewModel.insert = function(args) {
-      var moodVal = args.object.value;
-      var object = args.object;
-      var studyID = "Subject1"
-      var assess = args.object.context;
-      var checkVal = args.object.text;
-      var agree = 0;
-      var pagree = 0;
-      var neutral = 0;
-      var pdisagree = 0;
-      var disagree = 0;
-      if(checkVal == "Agree"){
-        var agree = 1;
-      } if(checkVal == "Partially agree"){
-        var pagree = 1;
-      } if(checkVal == "Neutral"){
-        var neutral = 1;
-      } if(checkVal == "Partially disagree"){
-        var pdisagree = 1;
-      } if(checkVal == "Disagree"){
-        var disagree = 1;
-      }
+    // insert a new record for the questions
+    viewModel.insertQ = function(args) {
+      var assess = args.object.value;
+      var answer = args.object.text;
+
       var btn = args.object;
-      object.backgroundColor = "#3489db";
-            database.execSQL("INSERT OR REPLACE INTO questions (studyID, question, A, PA, N, PD, D) VALUES (?,?,?,?,?,?,?)", [studyID, assess, agree, pagree, neutral, pdisagree, disagree]).then(rows => {
-                console.log("The new record id is: " + assess + agree + pagree + neutral + pdisagree + disagree);
+      btn.backgroundColor = "#3489db";
+
+            database.execSQL("INSERT OR REPLACE INTO questions (studyID, question, answer) VALUES (?,?,?)", [this.studyID, assess, answer]).then(id => {
+                console.log("The new record id is: ", id);
             }, error => {
             console.log("INSERT ERROR", error);
         });
     }
 
-    viewModel.select = function(){
+    viewModel.selectQ = function(){
     this.Questions = new ObservableArray ([]);
-      database.all("SELECT question, A, PA, N, PD, D from questions").then(rows => {
+      database.all("SELECT studyID, question, answer from questions").then(rows => {
         for(var row in rows) {
-        this.Questions.push({question: rows[row][0], agree: rows[row][1], pagree: rows[row][2], neutral: rows[row][3], pdisagree: rows[row][4], disagree: rows[row][5]});
+        this.Questions.push({studyID: rows[row][0], question: rows[row][1], answer: rows[row][2]});
         }
           }, error => {
           console.log("SELECT ERROR", error);
       });
     }
 
-  viewModel.select();
+    /*Selects the questions about the EMR*/
+    viewModel.selectEMR = function(){
+    this.QuestionsEMR = new ObservableArray ([]);
+      database.all("SELECT studyID, question, answer from questions WHERE question <= 5 group by question").then(rows => {
+        for(var row in rows) {
+        this.QuestionsEMR.push({studyID: rows[row][0], question: rows[row][1], answer: rows[row][2]});
+        }
+          }, error => {
+          console.log("SELECT ERROR", error);
+      });
+    }
+
+    /*Selects the questions about the EMR*/
+    viewModel.selectPaper = function(){
+    this.QuestionsPaper = new ObservableArray ([]);
+      database.all("SELECT studyID, question, answer from questions WHERE question > 5 group by question").then(rows => {
+        for(var row in rows) {
+        this.QuestionsPaper.push({studyID: rows[row][0], question: rows[row][1], answer: rows[row][2]});
+        }
+          }, error => {
+          console.log("SELECT ERROR", error);
+      });
+    }
+
+
+    // insert a new record for the person
+    viewModel.insertPerson = function(args) {
+            database.execSQL("INSERT OR REPLACE INTO person (studyID, facility, emr, position, edu, gender, age) VALUES (?,?,?,?,?,?,?)", [this.studyID, this.facility, this.emr, this.position, this.edu, this.gender, this.age]).then(id => {
+                console.log("The new record id is: ", id );
+                  dialogs.alert({
+                      title: "Success",
+                      message: "Your data was saved!",
+                      okButtonText: "Close"
+                  }).then(function () {
+                      console.log("Dialog closed!");
+                  });
+
+            }, error => {
+            console.log("INSERT ERROR", error);
+        });
+    }
+
+    viewModel.selectPerson = function(){
+      this.Person = new ObservableArray([]);
+      database.all("SELECT studyID, facility, emr, position, edu, gender, age from person").then(rows => {
+        for(var row in rows) {
+          this.Person.push({studyID: rows[row][0], facility: rows[row][1], emr: rows[row][2], position: rows[row][3], edu: rows[row][4], gender: rows[row][5], age: rows[row][6]});
+        }
+          }, error => {
+          console.log("SELECT ERROR", error);
+      });
+    }
+
+  viewModel.selectPaper();
+  viewModel.selectEMR();
+  viewModel.selectQ();
+  viewModel.selectPerson();
   return viewModel;
 }
 exports.createViewModel = createViewModel;

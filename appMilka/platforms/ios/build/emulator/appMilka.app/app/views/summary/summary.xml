@@ -1,38 +1,31 @@
 
-<Page navigatingTo="onPageLoaded" class="page" xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:chart="nativescript-ui-chart">
+<Page navigatingTo="onLoad" class="page">
     <Page.actionBar>
         <ActionBar title="Assessment" icon="" class="action-bar">
           <ActionBar.actionItems>
-              <ActionItem text="select" tap="{{ select }}" ios.position="right" />
+              <ActionItem text="Print out" tap="{{ select }}" ios.position="right" />
           </ActionBar.actionItems>
         </ActionBar>
     </Page.actionBar>
-    <chart:RadCartesianChart class="graphBox" height="350">
-      <chart:RadCartesianChart.series>
+<ScrollView>
+  <StackLayout class="p-10">
+    <Label class="h2" text="Graphs of registered data"></Label>
 
-      <chart:BarSeries items="{{ QuestionsAgree }}" categoryProperty="question" valueProperty="agree" showLabels="true">
-                <chart:LineSeries.labelStyle>
-                <chart:PointLabelStyle margin="22" fontStyle="Bold" fillColor="#60B3FC" textSize="18" textColor="White" />
-            </chart:LineSeries.labelStyle>
-          </chart:BarSeries>
-      </chart:RadCartesianChart.series>
+    <StackLayout class="graphContainer">
+      <Label class="h2" text="EMR"></Label>
+      <Label class="body" text="The first five questions from the questionnaire"></Label>
+      <StackLayout id="barGraph">
+      </StackLayout>
+    </StackLayout>
 
-      <chart:RadCartesianChart.horizontalAxis>
-         <chart:CategoricalAxis allowPan="true" allowZoom="true" labelFitMode="Rotate"/>
-      </chart:RadCartesianChart.horizontalAxis>
-      <chart:RadCartesianChart.verticalAxis>
-           <chart:LinearAxis horizontalLocation="Left" allowZoom="true" allowPan="true" majorStep="1"/>
-      </chart:RadCartesianChart.verticalAxis>
-      <chart:RadCartesianChart.trackball>
-        <chart:Trackball/>
-      </chart:RadCartesianChart.trackball>
-      <chart:RadCartesianChart.legend>
-      <chart:RadLegendView position="Middle" title="Explanation" height="200" width="200" enableSelection="true"/>
-    </chart:RadCartesianChart.legend>
-    </chart:RadCartesianChart>
+    <StackLayout class="graphContainer">
+      <Label class="h2" text="Paper"></Label>
+      <Label class="body" text="The last five questions from the questionnaire"></Label>
+      <StackLayout id="barGraphPaper">
+      </StackLayout>
+    </StackLayout>
 
 
-    <!--http://docs.telerik.com/devtools/nativescript-ui/Controls/NativeScript/Chart/Series/range-bar-->
-    <!-- http://docs.telerik.com/devtools/nativescript-ui/Controls/NativeScript/Gauges/indicators-->
-
+</StackLayout>
+</ScrollView>
 </Page>
