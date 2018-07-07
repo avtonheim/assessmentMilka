@@ -7,18 +7,9 @@ var dialogs = require("ui/dialogs");
 function createViewModel(database) {
     var viewModel = new Observable();
     viewModel.Questions = new ObservableArray([]);
-    viewModel.QuestionsPaper = new ObservableArray([]);
-    viewModel.QuestionsAgree = new ObservableArray([]);
-    viewModel.QuestionsPa = new ObservableArray([]);
-    viewModel.QuestionsNeutral = new ObservableArray([]);
-    viewModel.QuestionsPd = new ObservableArray([]);
-    viewModel.QuestionsDisagree = new ObservableArray([]);
-    viewModel.QuestionsAgreePaper = new ObservableArray([]);
-    viewModel.QuestionsPaPaper = new ObservableArray([]);
-    viewModel.QuestionsNeutralPaper = new ObservableArray([]);
-    viewModel.QuestionsPdPaper = new ObservableArray([]);
-    viewModel.QuestionsDisagreePaper = new ObservableArray([]);
     viewModel.Person = new ObservableArray([]);
+
+    //Text input
     viewModel.studyID = "";
     viewModel.facility = "";
     viewModel.emr = "";
@@ -26,6 +17,36 @@ function createViewModel(database) {
     viewModel.edu = "";
     viewModel.gender = "";
     viewModel.age = "";
+
+    //EMR observable arrays
+    viewModel.QuestionsPaper = new ObservableArray([]);
+    viewModel.QuestionsAgree = new ObservableArray([]);
+    viewModel.QuestionsPa = new ObservableArray([]);
+    viewModel.QuestionsNeutral = new ObservableArray([]);
+    viewModel.QuestionsPd = new ObservableArray([]);
+    viewModel.QuestionsDisagree = new ObservableArray([]);
+
+    //Paper observable arrays
+    viewModel.QuestionsAgreePaper = new ObservableArray([]);
+    viewModel.QuestionsPaPaper = new ObservableArray([]);
+    viewModel.QuestionsNeutralPaper = new ObservableArray([]);
+    viewModel.QuestionsPdPaper = new ObservableArray([]);
+    viewModel.QuestionsDisagreePaper = new ObservableArray([]);
+
+    //EMR selection of graph Kenya EMR
+    viewModel.QuestionsAgreeKenya = new ObservableArray([]);
+    viewModel.QuestionsPaKenya = new ObservableArray([]);
+    viewModel.QuestionsNeutralKenya = new ObservableArray([]);
+    viewModel.QuestionsPdKenya = new ObservableArray([]);
+    viewModel.QuestionsDisagreeKenya = new ObservableArray([]);
+
+    //EMR selection of graph IQCARE EMR
+    viewModel.QuestionsAgreeIQ = new ObservableArray([]);
+    viewModel.QuestionsPaIQ = new ObservableArray([]);
+    viewModel.QuestionsNeutralIQ = new ObservableArray([]);
+    viewModel.QuestionsPdIQ = new ObservableArray([]);
+    viewModel.QuestionsDisagreeIQ = new ObservableArray([]);
+
 
 
     // insert a new record for the questions
@@ -36,7 +57,7 @@ function createViewModel(database) {
       var btn = args.object;
       btn.backgroundColor = "#3489db";
 
-            database.execSQL("INSERT OR REPLACE INTO questions (studyID, question, answer) VALUES (?,?,?)", [this.studyID, assess, answer]).then(id => {
+            database.execSQL("INSERT OR REPLACE INTO questions (studyID, question, answer, emr) VALUES (?,?,?,?)", [this.studyID, assess, answer, this.emr]).then(id => {
                 console.log("The new record id is: ", id);
             }, error => {
             console.log("INSERT ERROR", error);
@@ -175,6 +196,128 @@ function createViewModel(database) {
     }
 
 
+    /*Selects the question based on EMR KENYA*/
+    viewModel.selectAgreeKenya = function(){
+    this.QuestionsAgreeKenya = new ObservableArray ([]);
+      database.all("SELECT question, count(answer), emr from questions WHERE emr = 'Kenya EMR' and answer = 'Agree' group by question").then(rows => {
+        for(var row in rows) {
+        this.QuestionsAgreeKenya.push({question: rows[row][0], answer: rows[row][1]});
+        }
+          }, error => {
+          console.log("SELECT ERROR", error);
+      });
+    }
+
+
+        /*Selects the question based on EMR KENYA*/
+        viewModel.selectPaKenya = function(){
+        this.QuestionsPaKenya = new ObservableArray ([]);
+          database.all("SELECT question, count(answer), emr from questions WHERE emr = 'Kenya EMR' and answer = 'Partially agree' group by question").then(rows => {
+            for(var row in rows) {
+            this.QuestionsPaKenya.push({question: rows[row][0], answer: rows[row][1]});
+            }
+              }, error => {
+              console.log("SELECT ERROR", error);
+          });
+        }
+
+        /*Selects the question based on EMR KENYA*/
+        viewModel.selectNeutralKenya = function(){
+        this.QuestionsNeutralKenya = new ObservableArray ([]);
+          database.all("SELECT question, count(answer), emr from questions WHERE emr = 'Kenya EMR' and answer = 'Neutral' group by question").then(rows => {
+            for(var row in rows) {
+            this.QuestionsNeutralKenya.push({question: rows[row][0], answer: rows[row][1]});
+            }
+              }, error => {
+              console.log("SELECT ERROR", error);
+          });
+        }
+
+
+        /*Selects the question based on EMR KENYA*/
+        viewModel.selectPdKenya = function(){
+        this.QuestionsPdKenya = new ObservableArray ([]);
+          database.all("SELECT question, count(answer), emr from questions WHERE emr = 'Kenya EMR' and answer = 'Partially disagree' group by question").then(rows => {
+            for(var row in rows) {
+            this.QuestionsPdKenya.push({question: rows[row][0], answer: rows[row][1]});
+            }
+              }, error => {
+              console.log("SELECT ERROR", error);
+          });
+        }
+
+        /*Selects the question based on EMR KENYA*/
+        viewModel.selectDisagreeKenya = function(){
+        this.QuestionsDisagreeKenya = new ObservableArray ([]);
+          database.all("SELECT question, count(answer), emr from questions WHERE emr = 'Kenya EMR' and answer = 'Disagree' group by question").then(rows => {
+            for(var row in rows) {
+            this.QuestionsDisagreeKenya.push({question: rows[row][0], answer: rows[row][1]});
+            }
+              }, error => {
+              console.log("SELECT ERROR", error);
+          });
+        }
+
+
+        /*Selects the question based on EMR IQCARE*/
+        viewModel.selectAgreeIQ = function(){
+        this.QuestionsAgreeIQ = new ObservableArray ([]);
+          database.all("SELECT question, count(answer), emr from questions WHERE emr = 'IQCARE EMR' and answer = 'Agree' group by question").then(rows => {
+            for(var row in rows) {
+            this.QuestionsAgreeIQ.push({question: rows[row][0], answer: rows[row][1]});
+            }
+              }, error => {
+              console.log("SELECT ERROR", error);
+          });
+        }
+
+        /*Selects the question based on EMR IQCARE*/
+        viewModel.selectPaIQ = function(){
+        this.QuestionsPaIQ = new ObservableArray ([]);
+          database.all("SELECT question, count(answer), emr from questions WHERE emr = 'IQCARE EMR' and answer = 'Partially agree' group by question").then(rows => {
+            for(var row in rows) {
+            this.QuestionsPaIQ.push({question: rows[row][0], answer: rows[row][1]});
+            }
+              }, error => {
+              console.log("SELECT ERROR", error);
+          });
+        }
+
+        /*Selects the question based on EMR IQCARE*/
+        viewModel.selectNeutralIQ = function(){
+        this.QuestionsNeutralIQ = new ObservableArray ([]);
+          database.all("SELECT question, count(answer), emr from questions WHERE emr = 'IQCARE EMR' and answer = 'Neutral' group by question").then(rows => {
+            for(var row in rows) {
+            this.QuestionsNeutralIQ.push({question: rows[row][0], answer: rows[row][1]});
+            }
+              }, error => {
+              console.log("SELECT ERROR", error);
+          });
+        }
+
+        /*Selects the question based on EMR IQCARE*/
+        viewModel.selectPdIQ = function(){
+        this.QuestionsPdIQ = new ObservableArray ([]);
+          database.all("SELECT question, count(answer), emr from questions WHERE emr = 'IQCARE EMR' and answer = 'Partially disagree' group by question").then(rows => {
+            for(var row in rows) {
+            this.QuestionsPdIQ.push({question: rows[row][0], answer: rows[row][1]});
+            }
+              }, error => {
+              console.log("SELECT ERROR", error);
+          });
+        }
+
+        /*Selects the question based on EMR IQCARE*/
+        viewModel.selectDisagreeIQ = function(){
+        this.QuestionsDisagreeIQ = new ObservableArray ([]);
+          database.all("SELECT question, count(answer), emr from questions WHERE emr = 'IQCARE EMR' and answer = 'Disagree' group by question").then(rows => {
+            for(var row in rows) {
+            this.QuestionsDisagreeIQ.push({question: rows[row][0], answer: rows[row][1]});
+            }
+              }, error => {
+              console.log("SELECT ERROR", error);
+          });
+        }
 
     // insert a new record for the person
     viewModel.insertPerson = function(args) {
@@ -205,16 +348,35 @@ function createViewModel(database) {
     }
 
 
+  //Functions to start the general overview of EMR
   viewModel.selectAgree();
   viewModel.selectPa();
   viewModel.selectNeutral();
   viewModel.selectPd();
   viewModel.selectDisagree();
+
+  //Functions to start the general overview of paper
   viewModel.selectAgreePaper();
   viewModel.selectPaPaper();
   viewModel.selectNeutralPaper();
   viewModel.selectPdPaper();
   viewModel.selectDisagreePaper();
+
+  //Functions to start the general overview of Kenya EMR
+  viewModel.selectAgreeKenya();
+  viewModel.selectPaKenya();
+  viewModel.selectNeutralKenya();
+  viewModel.selectPdKenya();
+  viewModel.selectDisagreeKenya();
+
+  //Functions to start the general overview of IQCARE EMR
+  viewModel.selectAgreeIQ();
+  viewModel.selectPaIQ();
+  viewModel.selectNeutralIQ();
+  viewModel.selectPdIQ();
+  viewModel.selectDisagreeIQ();
+
+  //Select statements
   viewModel.selectQ();
   viewModel.selectPerson();
   return viewModel;

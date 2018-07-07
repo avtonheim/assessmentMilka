@@ -12,7 +12,7 @@ function onNavigatingTo(args){
 
 //Instantiating the first table
  (new Sqlite("database.db")).then(db => {
-         db.execSQL("CREATE TABLE IF NOT EXISTS questions (id INTEGER PRIMARY KEY AUTOINCREMENT, studyID text, question INTEGER, A text, PA text, N text, PD text, D text)").then(id => {
+         db.execSQL("CREATE TABLE IF NOT EXISTS questions (id INTEGER PRIMARY KEY AUTOINCREMENT, studyID text, question INTEGER, answer TEXT)").then(id => {
              page.bindingContext = createViewModel(db);
              console.log("Success! Opened the questions table!");
          }, error => {

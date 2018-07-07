@@ -62,7 +62,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		wBBabDTnUceVKYIQJ0FzUy4Muh8=
+		aOPCOnKdtKFlnlXbm7AwMM6Z8Qs=
 		</data>
 		<key>Frameworks/NativeScript.framework/Info.plist</key>
 		<data>
@@ -202,7 +202,7 @@
 		</data>
 		<key>LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		gz4m6G1ZYPEZ6TZGgnY0vBjW8+A=
+		tNoX4HJEXCe8723J3btYo4xUd34=
 		</data>
 		<key>LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -210,7 +210,7 @@
 		</data>
 		<key>LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		XLSGjOA36Gq0cv7UiKXhLvWLvvI=
+		u4ZarHEmFkGThBsLUCwyll8SeuM=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -222,7 +222,7 @@
 		</data>
 		<key>app/app.css</key>
 		<data>
-		k2e+QrFEcZAGcPHqFlruh86yG8w=
+		GFfRmpL2Oc4uRr4DMIy11pVXDdg=
 		</data>
 		<key>app/app.js</key>
 		<data>
@@ -2040,53 +2040,57 @@
 		<data>
 		wZxmlWBzxXxcU/NORbfb5LDFxuM=
 		</data>
+		<key>app/views/graphs/alldata.js</key>
+		<data>
+		UNI5/VmVSVnluZq7brIkR3NTPn4=
+		</data>
+		<key>app/views/graphs/alldata.xml</key>
+		<data>
+		dfaoV/FDzBL+QcbJ9wdi5aWhUuI=
+		</data>
 		<key>app/views/graphs/bargraph.js</key>
 		<data>
-		hKWtQO3exPKVSnM2u4tligzM4bk=
+		UNI5/VmVSVnluZq7brIkR3NTPn4=
 		</data>
 		<key>app/views/graphs/bargraph.xml</key>
 		<data>
-		BwjG92HpGUSGZRZBb1zNtGsMbeY=
+		e+YHAMhEhJPnGRr1wenK5afd2Ig=
 		</data>
 		<key>app/views/graphs/bargraphpaper.js</key>
 		<data>
-		hKWtQO3exPKVSnM2u4tligzM4bk=
+		UNI5/VmVSVnluZq7brIkR3NTPn4=
 		</data>
 		<key>app/views/graphs/bargraphpaper.xml</key>
 		<data>
-		lWh3Hx/M7mFq4hpVwCURKSAF+Q4=
+		ltpqp/nO6ELTw+gW7ijnU44T8F4=
 		</data>
-		<key>app/views/questions/person/person-view-model.js</key>
+		<key>app/views/graphs/person.js</key>
 		<data>
-		7QCvv50GthjUzj1irVNBV7OlNK8=
+		O0tQ+i9RpQaILoIO3ZKg29v2tc4=
 		</data>
-		<key>app/views/questions/person/person.js</key>
+		<key>app/views/graphs/person.xml</key>
 		<data>
-		LdThpTdAzdcKDadEqee4yMM7dm4=
-		</data>
-		<key>app/views/questions/person/person.xml</key>
-		<data>
-		KKhC1PJOnlTyYo5LoI5/t7w9VpY=
+		MZiHFdRz05TgH2/EUdN+YQMxjQ0=
 		</data>
 		<key>app/views/questions/questions-view-model.js</key>
 		<data>
-		JhsWUASAiRTdklX5rFqviXBGm2o=
+		Zt0HI1aNICeZ7MKVlAOyPmGzkWE=
 		</data>
 		<key>app/views/questions/questions.js</key>
 		<data>
-		ZNMlSyxkLdGURYwWF7uHrjBpOH4=
+		u7pNZXHKr8Fmta4k3VuStUlQ/e8=
 		</data>
 		<key>app/views/questions/questions.xml</key>
 		<data>
-		ACN+lsSvsLVmxYWuoxWj7maMdxI=
+		tDYv4w0m+Um7ibFmprHvbVyQj28=
 		</data>
 		<key>app/views/summary/summary.js</key>
 		<data>
-		YaU4O6e6gS7rGsG/XPBP96//5eY=
+		ovaJYCYt5sySPbdbnrYopmUpHKk=
 		</data>
 		<key>app/views/summary/summary.xml</key>
 		<data>
-		Ges4EHwfDytBBWSJ17fK9jwb5Qo=
+		em9294/G34kE4BJPhdef7ZRWomc=
 		</data>
 		<key>build.xcconfig</key>
 		<data>
@@ -2262,11 +2266,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wBBabDTnUceVKYIQJ0FzUy4Muh8=
+			aOPCOnKdtKFlnlXbm7AwMM6Z8Qs=
 			</data>
 			<key>hash2</key>
 			<data>
-			H8MJELsPTAx+wlIpQTWDJDL/yum6AbvzdkzRsvOAEVo=
+			iTMGnnEcw69XZVFOLq6spbHMNpeAnhek/x+dCyjsOJQ=
 			</data>
 		</dict>
 		<key>Frameworks/NativeScript.framework/Info.plist</key>
@@ -2636,11 +2640,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gz4m6G1ZYPEZ6TZGgnY0vBjW8+A=
+			tNoX4HJEXCe8723J3btYo4xUd34=
 			</data>
 			<key>hash2</key>
 			<data>
-			YT8FDsqTvQ2S0EbwejXa9FnMcgAAW6eLHrkr47mEpuQ=
+			h23dtGMcwDFAN6UEQjuIQxpQbC934Q+ueSlQN9WuG7w=
 			</data>
 		</dict>
 		<key>LaunchScreen.storyboardc/Info.plist</key>
@@ -2658,11 +2662,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XLSGjOA36Gq0cv7UiKXhLvWLvvI=
+			u4ZarHEmFkGThBsLUCwyll8SeuM=
 			</data>
 			<key>hash2</key>
 			<data>
-			5JCKL4S1igbW7T7Tip6Et8sMxu5pDVbsRQhqs14eL9g=
+			Xx8qKXRvMKnpVju0pc46sbJP3kxukNu0Te2Fc/iwWD8=
 			</data>
 		</dict>
 		<key>app/app-root.xml</key>
@@ -2680,11 +2684,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			k2e+QrFEcZAGcPHqFlruh86yG8w=
+			GFfRmpL2Oc4uRr4DMIy11pVXDdg=
 			</data>
 			<key>hash2</key>
 			<data>
-			YonXKs/0vmY7jQsx6uGWK863JdBcjBZ7Wdr197pTKKU=
+			70O44/LGfseXX8mSXa7YJnO5VxR69uzcRi+I6baxfF8=
 			</data>
 		</dict>
 		<key>app/app.js</key>
@@ -7681,136 +7685,147 @@
 			vptz0pUPfuyVX66ce+1E2NtC7vI23QYWGXISQMpVdQk=
 			</data>
 		</dict>
+		<key>app/views/graphs/alldata.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UNI5/VmVSVnluZq7brIkR3NTPn4=
+			</data>
+			<key>hash2</key>
+			<data>
+			/3u/DULRI2dbP7w/nYSFMtYdt0zoQDOVzUWppBScMFg=
+			</data>
+		</dict>
+		<key>app/views/graphs/alldata.xml</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dfaoV/FDzBL+QcbJ9wdi5aWhUuI=
+			</data>
+			<key>hash2</key>
+			<data>
+			NJwUMmrhONlx18RVKz3iwwq7EAwID6SUBjE1R+WsOEQ=
+			</data>
+		</dict>
 		<key>app/views/graphs/bargraph.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hKWtQO3exPKVSnM2u4tligzM4bk=
+			UNI5/VmVSVnluZq7brIkR3NTPn4=
 			</data>
 			<key>hash2</key>
 			<data>
-			jlNeBIJxu4DVGX+q/bgZrSMlV1RwMfC3R/8uPYBfsOc=
+			/3u/DULRI2dbP7w/nYSFMtYdt0zoQDOVzUWppBScMFg=
 			</data>
 		</dict>
 		<key>app/views/graphs/bargraph.xml</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BwjG92HpGUSGZRZBb1zNtGsMbeY=
+			e+YHAMhEhJPnGRr1wenK5afd2Ig=
 			</data>
 			<key>hash2</key>
 			<data>
-			KeUhkVO9ETL5i+Ih63keEkjYWKLwsXI5gg9dyF7SxuU=
+			VgtJsMqQvsryOb2x7rNmFJS+s8hz5sOyOlRPVxef9zQ=
 			</data>
 		</dict>
 		<key>app/views/graphs/bargraphpaper.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hKWtQO3exPKVSnM2u4tligzM4bk=
+			UNI5/VmVSVnluZq7brIkR3NTPn4=
 			</data>
 			<key>hash2</key>
 			<data>
-			jlNeBIJxu4DVGX+q/bgZrSMlV1RwMfC3R/8uPYBfsOc=
+			/3u/DULRI2dbP7w/nYSFMtYdt0zoQDOVzUWppBScMFg=
 			</data>
 		</dict>
 		<key>app/views/graphs/bargraphpaper.xml</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lWh3Hx/M7mFq4hpVwCURKSAF+Q4=
+			ltpqp/nO6ELTw+gW7ijnU44T8F4=
 			</data>
 			<key>hash2</key>
 			<data>
-			mgh8ObeptwvGMDn+bvHKfBxrjf/v4Agusc/AEcxk02Y=
+			T7jox0wqo+rPs8861y898Jzy9WSrLJLTPKmdXrObX58=
 			</data>
 		</dict>
-		<key>app/views/questions/person/person-view-model.js</key>
+		<key>app/views/graphs/person.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7QCvv50GthjUzj1irVNBV7OlNK8=
+			O0tQ+i9RpQaILoIO3ZKg29v2tc4=
 			</data>
 			<key>hash2</key>
 			<data>
-			hlWxDubHsbjUr0I0xYB4/usDGl3xNaLC+wqGwQ211/4=
+			tCsQMuVMDf8LYju+bYs1cdNyE7oOKqMihKV+k6Kjl6c=
 			</data>
 		</dict>
-		<key>app/views/questions/person/person.js</key>
+		<key>app/views/graphs/person.xml</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LdThpTdAzdcKDadEqee4yMM7dm4=
+			MZiHFdRz05TgH2/EUdN+YQMxjQ0=
 			</data>
 			<key>hash2</key>
 			<data>
-			oAoTfGE4TckbqVbrLOxgNH+wIvwP1+kepdfl9zkCyCU=
-			</data>
-		</dict>
-		<key>app/views/questions/person/person.xml</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			KKhC1PJOnlTyYo5LoI5/t7w9VpY=
-			</data>
-			<key>hash2</key>
-			<data>
-			FXdmoLPH6vAT8MnbZJ1gWJM8H3AOJ16D/VPtCzJuC80=
+			Ff4FiqPBWLsq7/lJ8MMRv5FwtVhYDFTwiumxSyaiEzQ=
 			</data>
 		</dict>
 		<key>app/views/questions/questions-view-model.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JhsWUASAiRTdklX5rFqviXBGm2o=
+			Zt0HI1aNICeZ7MKVlAOyPmGzkWE=
 			</data>
 			<key>hash2</key>
 			<data>
-			z5ZVhu6PdfHIopxP+2wa14w1pAV1cOuTACk0qwV2zqw=
+			2cY2p28HeRvtXVjOzc54F+kU5qpu17XWjDdTbPl4nGk=
 			</data>
 		</dict>
 		<key>app/views/questions/questions.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZNMlSyxkLdGURYwWF7uHrjBpOH4=
+			u7pNZXHKr8Fmta4k3VuStUlQ/e8=
 			</data>
 			<key>hash2</key>
 			<data>
-			z94gWfVdZVZn3D8pt8vC03WLuifQk5RdYJjVBgRg988=
+			ZSy+p+PbzsRG8Zd/Z8ArGyDT8KuVQiMZ9FFemKhX1aw=
 			</data>
 		</dict>
 		<key>app/views/questions/questions.xml</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ACN+lsSvsLVmxYWuoxWj7maMdxI=
+			tDYv4w0m+Um7ibFmprHvbVyQj28=
 			</data>
 			<key>hash2</key>
 			<data>
-			y/cgjtt/IFj9W8VpgLMmJ2/kUiz+QyJpnD9H/Cm9r8k=
+			C+YrTVqsgTP7P7zjgALXCYu5jKgFRdgUEcEWJ0DC1bo=
 			</data>
 		</dict>
 		<key>app/views/summary/summary.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YaU4O6e6gS7rGsG/XPBP96//5eY=
+			ovaJYCYt5sySPbdbnrYopmUpHKk=
 			</data>
 			<key>hash2</key>
 			<data>
-			On2U8ScRwaXYizYQgyD1S73Rs93zO2C6p+CToacRJoQ=
+			1F77BrAF08sKefcSH3e/WlNixQ7lcoeRV0ptdlTYwt4=
 			</data>
 		</dict>
 		<key>app/views/summary/summary.xml</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Ges4EHwfDytBBWSJ17fK9jwb5Qo=
+			em9294/G34kE4BJPhdef7ZRWomc=
 			</data>
 			<key>hash2</key>
 			<data>
-			RYpv/7zLlXK4AnWr8B6hMtv1SrA7VNi37xFLU9Ftpp0=
+			zYh4djVlIv1Bty3eIzhbSb0pCQMzMbSgjF8vifXpwGI=
 			</data>
 		</dict>
 		<key>build.xcconfig</key>

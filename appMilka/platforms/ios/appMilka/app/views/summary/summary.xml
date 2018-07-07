@@ -25,6 +25,20 @@
       </StackLayout>
     </StackLayout>
 
+    <StackLayout class="graphContainer">
+      <Label class="h2" text="Kenya EMR answers"></Label>
+      <Label class="body" text="All answers of study subjects that reported the usage of Kenya EMR" textWrap="true"></Label>
+      <StackLayout id="kenyaGraph">
+      </StackLayout>
+    </StackLayout>
+
+    <StackLayout class="graphContainer">
+      <Label class="h2" text="IQCARE EMR answers"></Label>
+      <Label class="body" text="All answers of study subjects that reported the usage of IQCARE EMR" textWrap="true"></Label>
+      <StackLayout id="iqGraph">
+      </StackLayout>
+    </StackLayout>
+
     <StackLayout class="textStartContainer">
 
       <Label class="h2" text="Overview of study subjects"></Label>

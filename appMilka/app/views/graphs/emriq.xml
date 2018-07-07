@@ -1,0 +1,89 @@
+<StackLayout loaded="onPageLoaded"
+     xmlns="http://schemas.nativescript.org/tns.xsd"
+     xmlns:chart="nativescript-ui-chart">
+<chart:RadCartesianChart class="graphBox" id="specialGraph" height="500">
+  <chart:RadCartesianChart.series>
+
+    <chart:BarSeries seriesName="Agree" selectionMode="DataPointMultiple" legendTitle="Agree" items="{{ QuestionsAgreeIQ }}"  categoryProperty="question" valueProperty="answer" showLabels="true">
+            <chart:LineSeries.labelStyle>
+          <chart:PointLabelStyle margin="5" fontStyle="Bold" fillColor="#60B3FC" textSize="12" textColor="White" />
+      </chart:LineSeries.labelStyle>
+    </chart:BarSeries>
+
+    <chart:BarSeries seriesName="PartlyAgree" selectionMode="DataPointMultiple" legendTitle="Partly Agree" items="{{ QuestionsPaIQ }}"  categoryProperty="question" valueProperty="answer" showLabels="true">
+            <chart:LineSeries.labelStyle>
+          <chart:PointLabelStyle margin="5" fontStyle="Bold" fillColor="#60B3FC" textSize="12" textColor="White" />
+      </chart:LineSeries.labelStyle>
+    </chart:BarSeries>
+
+    <chart:BarSeries seriesName="Neutral" selectionMode="DataPointMultiple" legendTitle="Neutral" items="{{ QuestionsNeutralIQ }}"  categoryProperty="question" valueProperty="answer" showLabels="true">
+            <chart:LineSeries.labelStyle>
+          <chart:PointLabelStyle margin="5" fontStyle="Bold" fillColor="#60B3FC" textSize="12" textColor="White" />
+      </chart:LineSeries.labelStyle>
+    </chart:BarSeries>
+
+    <chart:BarSeries seriesName="PartlyDisagree" selectionMode="DataPointMultiple" legendTitle="Partially Disagree" items="{{ QuestionsPdIQ }}"  categoryProperty="question" valueProperty="answer" showLabels="true">
+            <chart:LineSeries.labelStyle>
+          <chart:PointLabelStyle margin="5" fontStyle="Bold" fillColor="#60B3FC" textSize="12" textColor="White" />
+      </chart:LineSeries.labelStyle>
+    </chart:BarSeries>
+
+    <chart:BarSeries seriesName="Disagree" selectionMode="DataPointMultiple" legendTitle="Partially Disagree" items="{{ QuestionsDisagreeIQ }}"  categoryProperty="question" valueProperty="answer" showLabels="true">
+            <chart:LineSeries.labelStyle>
+          <chart:PointLabelStyle margin="5" fontStyle="Bold" fillColor="#60B3FC" textSize="12" textColor="White" />
+      </chart:LineSeries.labelStyle>
+    </chart:BarSeries>
+
+      <chart:BarSeries.labelStyle>
+            <chart:PointLabelStyle margin="5" fontStyle="Bold" textSize="20" textColor="White" />
+      </chart:BarSeries.labelStyle>
+
+    <chart:RadCartesianChart.palettes>
+      <chart:Palette seriesName="Agree">
+            <chart:Palette.entries>
+            <chart:PaletteEntry strokeColor="#EBA0A0" fillColor="#1280A0"/>
+          </chart:Palette.entries>
+        </chart:Palette>
+
+        <chart:Palette seriesName="PartlyAgree">
+              <chart:Palette.entries>
+              <chart:PaletteEntry strokeColor="#EBA0A0" fillColor="#2995b5"/>
+            </chart:Palette.entries>
+          </chart:Palette>
+
+          <chart:Palette seriesName="Neutral">
+                <chart:Palette.entries>
+                <chart:PaletteEntry strokeColor="#EBA0A0" fillColor="white"/>
+              </chart:Palette.entries>
+            </chart:Palette>
+
+            <chart:Palette seriesName="PartiallyDisagree">
+                  <chart:Palette.entries>
+                  <chart:PaletteEntry strokeColor="#EBA0A0" fillColor="#1280A0"/>
+                </chart:Palette.entries>
+              </chart:Palette>
+
+              <chart:Palette seriesName="Disagree">
+                    <chart:Palette.entries>
+                    <chart:PaletteEntry strokeColor="#EBA0A0" fillColor="#1280A0"/>
+                  </chart:Palette.entries>
+                </chart:Palette>
+  </chart:RadCartesianChart.palettes>
+</chart:RadCartesianChart.series>
+
+<chart:RadCartesianChart.horizontalAxis>
+    <chart:LinearAxis majorStep="1"/>
+</chart:RadCartesianChart.horizontalAxis>
+<chart:RadCartesianChart.verticalAxis>
+    <chart:CategoricalAxis/>
+</chart:RadCartesianChart.verticalAxis>
+<chart:RadCartesianChart.trackball>
+  <chart:Trackball/>
+</chart:RadCartesianChart.trackball>
+<chart:RadCartesianChart.legend>
+<chart:RadLegendView position="center" title="Explanation" height="200" width="200" enableSelection="true"/>
+</chart:RadCartesianChart.legend>
+</chart:RadCartesianChart>
+</StackLayout>
+    <!--http://docs.telerik.com/devtools/nativescript-ui/Controls/NativeScript/Chart/Series/range-bar-->
+    <!-- http://docs.telerik.com/devtools/nativescript-ui/Controls/NativeScript/Gauges/indicators-->

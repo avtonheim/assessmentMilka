@@ -59,7 +59,27 @@
   background-color: #EBA0A0;
   border-radius: 15px;
   margin-top: 20px;
-  padding: 10px;
+  padding: 30px;
+}
+.textStartContainer{
+  border-radius: 15px;
+  margin-top: 50px;
+  padding: 30px;
+  height: auto;
+}
+.textContainer{
+  background-color: #5180cc;
+  color: white;
+  border-radius: 15px;
+  margin-top: 20px;
+  padding: 30px;
+  height: 200px;
+}
+.personContainer{
+  border-radius: 15px;
+  margin-top: 20px;
+  padding: 30px;
+  height: 400px;
 }
 .personInfo{
   margin-top: 20px;

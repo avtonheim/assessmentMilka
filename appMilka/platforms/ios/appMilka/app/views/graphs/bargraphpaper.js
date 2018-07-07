@@ -5,7 +5,7 @@ var Sqlite = require("nativescript-sqlite");
 function onPageLoaded(args){
   var page = args.object;
   (new Sqlite("database.db")).then(db => {
-         db.execSQL("CREATE TABLE IF NOT EXISTS questions (id INTEGER PRIMARY KEY AUTOINCREMENT, studyID text, question INTEGER, answer TEXT)").then(id => {
+         db.execSQL("CREATE TABLE IF NOT EXISTS questions (id INTEGER PRIMARY KEY AUTOINCREMENT, studyID text, question INTEGER, answer TEXT, emr TEXT)").then(id => {
              page.bindingContext = createViewModel(db);
              console.log("Success! Opened the database");
          }, error => {

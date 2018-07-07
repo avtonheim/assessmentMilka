@@ -7,6 +7,18 @@ var dialogs = require("ui/dialogs");
 function createViewModel(database) {
     var viewModel = new Observable();
     viewModel.Questions = new ObservableArray([]);
+    viewModel.QuestionsPaper = new ObservableArray([]);
+    viewModel.QuestionsAgree = new ObservableArray([]);
+    viewModel.QuestionsPa = new ObservableArray([]);
+    viewModel.QuestionsNeutral = new ObservableArray([]);
+    viewModel.QuestionsPd = new ObservableArray([]);
+    viewModel.QuestionsDisagree = new ObservableArray([]);
+    viewModel.QuestionsAgreePaper = new ObservableArray([]);
+    viewModel.QuestionsPaPaper = new ObservableArray([]);
+    viewModel.QuestionsNeutralPaper = new ObservableArray([]);
+    viewModel.QuestionsPdPaper = new ObservableArray([]);
+    viewModel.QuestionsDisagreePaper = new ObservableArray([]);
+    viewModel.Person = new ObservableArray([]);
     viewModel.studyID = "";
     viewModel.facility = "";
     viewModel.emr = "";
@@ -18,30 +30,13 @@ function createViewModel(database) {
 
     // insert a new record for the questions
     viewModel.insertQ = function(args) {
-      var moodVal = args.object.value;
-      var object = args.object;
-      var assess = args.object.context;
-      var checkVal = args.object.text;
+      var assess = args.object.value;
+      var answer = args.object.text;
 
-      var agree = 0;
-      var pagree = 0;
-      var neutral = 0;
-      var pdisagree = 0;
-      var disagree = 0;
-      if(checkVal == "Agree"){
-        var agree = 1;
-      } if(checkVal == "Partially agree"){
-        var pagree = 1;
-      } if(checkVal == "Neutral"){
-        var neutral = 1;
-      } if(checkVal == "Partially disagree"){
-        var pdisagree = 1;
-      } if(checkVal == "Disagree"){
-        var disagree = 1;
-      }
       var btn = args.object;
-      object.backgroundColor = "#3489db";
-            database.execSQL("INSERT OR REPLACE INTO questions (studyID, question, A, PA, N, PD, D) VALUES (?,?,?,?,?,?,?)", [this.studyID, assess, agree, pagree, neutral, pdisagree, disagree]).then(id => {
+      btn.backgroundColor = "#3489db";
+
+            database.execSQL("INSERT OR REPLACE INTO questions (studyID, question, answer) VALUES (?,?,?)", [this.studyID, assess, answer]).then(id => {
                 console.log("The new record id is: ", id);
             }, error => {
             console.log("INSERT ERROR", error);
@@ -50,15 +45,135 @@ function createViewModel(database) {
 
     viewModel.selectQ = function(){
     this.Questions = new ObservableArray ([]);
-      database.all("SELECT studyID, question, A, PA, N, PD, D from questions").then(rows => {
+      database.all("SELECT studyID, question, answer from questions").then(rows => {
         for(var row in rows) {
-          console.log(rows[row]);
-        this.Questions.push({studyID: rows[row][0], question: rows[row][1], agree: rows[row][2], pagree: rows[row][3], neutral: rows[row][4], pdisagree: rows[row][5], disagree: rows[row][6]});
+        this.Questions.push({studyID: rows[row][0], question: rows[row][1], answer: rows[row][2]});
         }
           }, error => {
           console.log("SELECT ERROR", error);
       });
     }
+
+    /*Selects the questions about the EMR*/
+    viewModel.selectAgree = function(){
+    this.QuestionsAgree = new ObservableArray ([]);
+      database.all("SELECT question, count(answer) from questions WHERE answer = 'Agree' and question <= 5 group by question").then(rows => {
+        for(var row in rows) {
+        this.QuestionsAgree.push({question: rows[row][0], answer: rows[row][1]});
+        }
+          }, error => {
+          console.log("SELECT ERROR", error);
+      });
+    }
+
+    /*Selects the questions about the EMR*/
+    viewModel.selectPa = function(){
+    this.QuestionsPa = new ObservableArray ([]);
+      database.all("SELECT question, count(answer) from questions WHERE answer = 'Partially agree' and question <= 5 group by question").then(rows => {
+        for(var row in rows) {
+        this.QuestionsPa.push({question: rows[row][0], answer: rows[row][1]});
+        }
+          }, error => {
+          console.log("SELECT ERROR", error);
+      });
+    }
+
+    /*Selects the questions about the EMR*/
+    viewModel.selectNeutral = function(){
+    this.QuestionsNeutral = new ObservableArray ([]);
+      database.all("SELECT question, count(answer) from questions WHERE answer = 'Neutral' and question <= 5 group by question").then(rows => {
+        for(var row in rows) {
+        this.QuestionsNeutral.push({question: rows[row][0], answer: rows[row][1]});
+        }
+          }, error => {
+          console.log("SELECT ERROR", error);
+      });
+    }
+
+    /*Selects the questions about the EMR*/
+    viewModel.selectPd = function(){
+    this.QuestionsPd = new ObservableArray ([]);
+      database.all("SELECT question, count(answer) from questions WHERE answer = 'Partially disagree' and question <= 5 group by question").then(rows => {
+        for(var row in rows) {
+        this.QuestionsPd.push({question: rows[row][0], answer: rows[row][1]});
+        }
+          }, error => {
+          console.log("SELECT ERROR", error);
+      });
+    }
+
+    /*Selects the questions about the EMR*/
+    viewModel.selectDisagree = function(){
+    this.QuestionsDisagree = new ObservableArray ([]);
+      database.all("SELECT question, count(answer) from questions WHERE answer = 'Disagree' and question <= 5 group by question").then(rows => {
+        for(var row in rows) {
+        this.QuestionsDisagree.push({question: rows[row][0], answer: rows[row][1]});
+        }
+          }, error => {
+          console.log("SELECT ERROR", error);
+      });
+    }
+
+    /*Selects the questions about the Paper*/
+    viewModel.selectAgreePaper = function(){
+    this.QuestionsAgreePaper = new ObservableArray ([]);
+      database.all("SELECT question, count(answer) from questions WHERE answer = 'Agree' and question > 5 group by question").then(rows => {
+        for(var row in rows) {
+        this.QuestionsAgreePaper.push({question: rows[row][0], answer: rows[row][1]});
+        }
+          }, error => {
+          console.log("SELECT ERROR", error);
+      });
+    }
+
+    /*Selects the questions about the Paper*/
+    viewModel.selectPaPaper = function(){
+    this.QuestionsPaPaper = new ObservableArray ([]);
+      database.all("SELECT question, count(answer) from questions WHERE answer = 'Partially agree' and question > 5 group by question").then(rows => {
+        for(var row in rows) {
+        this.QuestionsPaPaper.push({question: rows[row][0], answer: rows[row][1]});
+        }
+          }, error => {
+          console.log("SELECT ERROR", error);
+      });
+    }
+
+    /*Selects the questions about the Paper*/
+    viewModel.selectNeutralPaper = function(){
+    this.QuestionsNeutralPaper = new ObservableArray ([]);
+      database.all("SELECT question, count(answer) from questions WHERE answer = 'Neutral' and question > 5 group by question").then(rows => {
+        for(var row in rows) {
+        this.QuestionsNeutralPaper.push({question: rows[row][0], answer: rows[row][1]});
+        }
+          }, error => {
+          console.log("SELECT ERROR", error);
+      });
+    }
+
+    /*Selects the questions about the Paper*/
+    viewModel.selectPdPaper = function(){
+    this.QuestionsPdPaper = new ObservableArray ([]);
+      database.all("SELECT question, count(answer) from questions WHERE answer = 'Partially disagree' and question > 5 group by question").then(rows => {
+        for(var row in rows) {
+        this.QuestionsPdPaper.push({question: rows[row][0], answer: rows[row][1]});
+        }
+          }, error => {
+          console.log("SELECT ERROR", error);
+      });
+    }
+
+    /*Selects the questions about the Paper*/
+    viewModel.selectDisagreePaper = function(){
+    this.QuestionsDisagreePaper = new ObservableArray ([]);
+      database.all("SELECT question, count(answer) from questions WHERE answer = 'Disagree' and question > 5 group by question").then(rows => {
+        for(var row in rows) {
+        this.QuestionsDisagreePaper.push({question: rows[row][0], answer: rows[row][1]});
+        }
+          }, error => {
+          console.log("SELECT ERROR", error);
+      });
+    }
+
 
 
     // insert a new record for the person
@@ -79,16 +194,29 @@ function createViewModel(database) {
     }
 
     viewModel.selectPerson = function(){
+      this.Person = new ObservableArray([]);
       database.all("SELECT studyID, facility, emr, position, edu, gender, age from person").then(rows => {
         for(var row in rows) {
-          console.log(rows[row]);
+          this.Person.push({studyID: rows[row][0], facility: rows[row][1], emr: rows[row][2], position: rows[row][3], edu: rows[row][4], gender: rows[row][5], age: rows[row][6]});
         }
           }, error => {
           console.log("SELECT ERROR", error);
       });
     }
 
+
+  viewModel.selectAgree();
+  viewModel.selectPa();
+  viewModel.selectNeutral();
+  viewModel.selectPd();
+  viewModel.selectDisagree();
+  viewModel.selectAgreePaper();
+  viewModel.selectPaPaper();
+  viewModel.selectNeutralPaper();
+  viewModel.selectPdPaper();
+  viewModel.selectDisagreePaper();
   viewModel.selectQ();
+  viewModel.selectPerson();
   return viewModel;
 }
 exports.createViewModel = createViewModel;

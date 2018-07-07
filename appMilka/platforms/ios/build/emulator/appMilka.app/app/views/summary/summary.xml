@@ -3,7 +3,7 @@
     <Page.actionBar>
         <ActionBar title="Assessment" icon="" class="action-bar">
           <ActionBar.actionItems>
-              <ActionItem text="Print out" tap="{{ select }}" ios.position="right" />
+
           </ActionBar.actionItems>
         </ActionBar>
     </Page.actionBar>
@@ -24,6 +24,22 @@
       <StackLayout id="barGraphPaper">
       </StackLayout>
     </StackLayout>
+
+    <StackLayout class="textStartContainer">
+
+      <Label class="h2" text="Overview of study subjects"></Label>
+      <Label class="body" text="Information of all study subjects"></Label>
+    </StackLayout>
+      <StackLayout id="informant" style="height: 500px;">
+      </StackLayout>
+
+    <StackLayout class="textStartContainer">
+      <Label class="h2" text="Total overview"></Label>
+      <Label class="body" text="All the data registered"></Label>
+    </StackLayout>
+      <StackLayout id="text">
+      </StackLayout>
+
 
 
 </StackLayout>
