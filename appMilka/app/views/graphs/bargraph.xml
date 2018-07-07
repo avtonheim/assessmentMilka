@@ -1,33 +1,75 @@
 <StackLayout loaded="onPageLoaded"
      xmlns="http://schemas.nativescript.org/tns.xsd"
      xmlns:chart="nativescript-ui-chart">
-<chart:RadCartesianChart class="graphBox" height="350">
+<chart:RadCartesianChart class="graphBox" height="450">
   <chart:RadCartesianChart.series>
 
-        <chart:BarSeries seriesName="Antall"
-          selectionMode="DataPointMultiple"
-          outerRadiusFactor="0.8"
-          expandRadius="0.2"
-          legendTitle="Antall"
-          items="{{ QuestionsEMR }}"
-          categoryProperty="question"
-          valueProperty="answer"
-          showLabels="true">
+  <chart:BarSeries seriesName="Agree" selectionMode="DataPointMultiple" legendTitle="Agree" items="{{ QuestionsAgree }}"  categoryProperty="question" valueProperty="answer" showLabels="true">
           <chart:LineSeries.labelStyle>
-          <chart:PointLabelStyle margin="5" fontStyle="Bold" fillColor="#60B3FC" textSize="18" textColor="White"/>
-      </chart:LineSeries.labelStyle>
-    </chart:BarSeries>
+        <chart:PointLabelStyle margin="5" fontStyle="Bold" fillColor="#60B3FC" textSize="12" textColor="White" />
+    </chart:LineSeries.labelStyle>
+  </chart:BarSeries>
+
+  <chart:BarSeries seriesName="PartlyAgree" selectionMode="DataPointMultiple" legendTitle="Partly Agree" items="{{ QuestionsPa }}"  categoryProperty="question" valueProperty="answer" showLabels="true">
+          <chart:LineSeries.labelStyle>
+        <chart:PointLabelStyle margin="5" fontStyle="Bold" fillColor="#60B3FC" textSize="12" textColor="White" />
+    </chart:LineSeries.labelStyle>
+  </chart:BarSeries>
+
+  <chart:BarSeries seriesName="Neutral" selectionMode="DataPointMultiple" legendTitle="Neutral" items="{{ QuestionsNeutral }}"  categoryProperty="question" valueProperty="answer" showLabels="true">
+          <chart:LineSeries.labelStyle>
+        <chart:PointLabelStyle margin="5" fontStyle="Bold" fillColor="#60B3FC" textSize="12" textColor="White" />
+    </chart:LineSeries.labelStyle>
+  </chart:BarSeries>
+
+  <chart:BarSeries seriesName="PartlyDisagree" selectionMode="DataPointMultiple" legendTitle="Partially Disagree" items="{{ QuestionsPd }}"  categoryProperty="question" valueProperty="answer" showLabels="true">
+          <chart:LineSeries.labelStyle>
+        <chart:PointLabelStyle margin="5" fontStyle="Bold" fillColor="#60B3FC" textSize="12" textColor="White" />
+    </chart:LineSeries.labelStyle>
+  </chart:BarSeries>
+
+  <chart:BarSeries seriesName="Disagree" selectionMode="DataPointMultiple" legendTitle="Partially Disagree" items="{{ QuestionsDisagree }}"  categoryProperty="question" valueProperty="answer" showLabels="true">
+          <chart:LineSeries.labelStyle>
+        <chart:PointLabelStyle margin="5" fontStyle="Bold" fillColor="#60B3FC" textSize="12" textColor="White" />
+    </chart:LineSeries.labelStyle>
+  </chart:BarSeries>
 
       <chart:BarSeries.labelStyle>
             <chart:PointLabelStyle margin="15" fontStyle="Bold" textSize="20" textColor="White" />
       </chart:BarSeries.labelStyle>
 
     <chart:RadCartesianChart.palettes>
-  <chart:Palette seriesName="Antall">
+
+  <chart:Palette seriesName="Agree">
         <chart:Palette.entries>
-        <chart:PaletteEntry strokeColor="#1280A0" fillColor="#1280A0"/>
+        <chart:PaletteEntry strokeColor="#EBA0A0" fillColor="#1280A0"/>
       </chart:Palette.entries>
     </chart:Palette>
+
+    <chart:Palette seriesName="PartlyAgree">
+          <chart:Palette.entries>
+          <chart:PaletteEntry strokeColor="#EBA0A0" fillColor="#2995b5"/>
+        </chart:Palette.entries>
+      </chart:Palette>
+
+      <chart:Palette seriesName="Neutral">
+            <chart:Palette.entries>
+            <chart:PaletteEntry strokeColor="#EBA0A0" fillColor="white"/>
+          </chart:Palette.entries>
+        </chart:Palette>
+
+        <chart:Palette seriesName="PartiallyDisagree">
+              <chart:Palette.entries>
+              <chart:PaletteEntry strokeColor="#EBA0A0" fillColor="#1280A0"/>
+            </chart:Palette.entries>
+          </chart:Palette>
+
+          <chart:Palette seriesName="Disagree">
+                <chart:Palette.entries>
+                <chart:PaletteEntry strokeColor="#EBA0A0" fillColor="#1280A0"/>
+              </chart:Palette.entries>
+            </chart:Palette>
+
   </chart:RadCartesianChart.palettes>
 </chart:RadCartesianChart.series>
 
@@ -41,7 +83,7 @@
   <chart:Trackball/>
 </chart:RadCartesianChart.trackball>
 <chart:RadCartesianChart.legend>
-<chart:RadLegendView position="Middle" title="Forklaring" height="200" width="200" enableSelection="true"/>
+<chart:RadLegendView position="bottom" title="Explanation" height="200" width="200" enableSelection="true"/>
 </chart:RadCartesianChart.legend>
 </chart:RadCartesianChart>
 </StackLayout>
