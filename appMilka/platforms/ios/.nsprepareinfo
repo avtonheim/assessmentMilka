@@ -1,5 +1,5 @@
 {
-	"time": "Sat Jul 07 2018 15:55:09 GMT+0300 (Eastern European Summer Time)",
+	"time": "Sat Jul 07 2018 18:26:54 GMT+0300 (Eastern European Summer Time)",
 	"nativePlatformStatus": "3",
 	"bundle": false,
 	"release": false,
@@ -19,19 +19,19 @@
 		"/Users/aleksandernygardtonheim/assessmentMilka/appMilka/app/views/graphs/alldata.js": "20b19ba19c9b807b9a3815480f00bee334747678",
 		"/Users/aleksandernygardtonheim/assessmentMilka/appMilka/app/views/graphs/alldata.xml": "75f6a857f143cc12fe41c6c9f70762e5a5a152e2",
 		"/Users/aleksandernygardtonheim/assessmentMilka/appMilka/app/views/graphs/bargraph.js": "20b19ba19c9b807b9a3815480f00bee334747678",
+		"/Users/aleksandernygardtonheim/assessmentMilka/appMilka/app/views/graphs/bargraph.xml": "45819b1de746718e45dca1c1de350287b2fce14f",
 		"/Users/aleksandernygardtonheim/assessmentMilka/appMilka/app/views/graphs/bargraphpaper.js": "20b19ba19c9b807b9a3815480f00bee334747678",
-		"/Users/aleksandernygardtonheim/assessmentMilka/appMilka/app/views/graphs/bargraph.xml": "7be60700c8448493e7191af5c1e9cae5a7ddd888",
+		"/Users/aleksandernygardtonheim/assessmentMilka/appMilka/app/views/graphs/bargraphpaper.xml": "373d54b9dbf3cb94a6faafd83fba0636656014c9",
 		"/Users/aleksandernygardtonheim/assessmentMilka/appMilka/app/views/graphs/emrKenya.js": "20b19ba19c9b807b9a3815480f00bee334747678",
-		"/Users/aleksandernygardtonheim/assessmentMilka/appMilka/app/views/graphs/bargraphpaper.xml": "96da6aa7f9cee842d3c3e816ee28e7538e13f05e",
+		"/Users/aleksandernygardtonheim/assessmentMilka/appMilka/app/views/graphs/emrKenya.xml": "0cef44d130d16f55525f0852e8d82c39a3bb8247",
 		"/Users/aleksandernygardtonheim/assessmentMilka/appMilka/app/views/graphs/emriq.js": "20b19ba19c9b807b9a3815480f00bee334747678",
+		"/Users/aleksandernygardtonheim/assessmentMilka/appMilka/app/views/graphs/emriq.xml": "73ac49904b4256701e5086ed4f9cec0db8c8f9df",
 		"/Users/aleksandernygardtonheim/assessmentMilka/appMilka/app/views/graphs/person.js": "3b4b50fa2f51a506882e820edd92a0dbdbf6b5ce",
-		"/Users/aleksandernygardtonheim/assessmentMilka/appMilka/app/views/graphs/emriq.xml": "aa159a01f85da7fecb7bfdc485bc8a026daae728",
-		"/Users/aleksandernygardtonheim/assessmentMilka/appMilka/app/views/graphs/emrKenya.xml": "95f0f844b45d574ba99a25a72ed2bffd1fa87eaf",
 		"/Users/aleksandernygardtonheim/assessmentMilka/appMilka/app/views/graphs/person.xml": "31988715d473d394e01f6fc451d37e6103318d0d",
 		"/Users/aleksandernygardtonheim/assessmentMilka/appMilka/app/views/questions/questions-view-model.js": "118e90e0229075c5a32b680db89738f30bd1a8fb",
 		"/Users/aleksandernygardtonheim/assessmentMilka/appMilka/app/views/questions/questions.js": "ab58d1fe503438ed77adea35020873ee54cd79f6",
-		"/Users/aleksandernygardtonheim/assessmentMilka/appMilka/app/views/summary/summary.js": "ce364619eddee157ca0a935185e113394dcb5c3f",
 		"/Users/aleksandernygardtonheim/assessmentMilka/appMilka/app/views/questions/questions.xml": "b4362fe30d26f949bb89b166a6b1ef6d5c908f6f",
+		"/Users/aleksandernygardtonheim/assessmentMilka/appMilka/app/views/summary/summary.js": "ce364619eddee157ca0a935185e113394dcb5c3f",
 		"/Users/aleksandernygardtonheim/assessmentMilka/appMilka/app/views/summary/summary.xml": "15275fe2e3e7e5dbc303d395205b722dd88f0222"
 	}
 }
